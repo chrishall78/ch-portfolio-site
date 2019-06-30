@@ -17,7 +17,8 @@
 	<link rel="stylesheet" href="./css/base-styles.css">
 	<link rel="stylesheet" href="./css/site-styles.css">
 	<link rel="stylesheet" href="./css/fontawesome.all.min.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Libre+Baskerville:400,700&display=swap">
+	<link rel="stylesheet" href="./scripts/google-code-prettify/prettify.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Libre+Baskerville:400,700|Fira+Mono&display=swap">
 </head>
 
 <body id="top">
@@ -72,6 +73,27 @@
 
 		[work content goes here]
 
+		<div class="container-fluid">
+			<pre><code class="prettyprint lang-html">&lt;ul&gt;
+	&lt;li&gt;&lt;a href="./index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="./work.html"&gt;Work&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="./coding-tips.html"&gt;Coding Tips&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="./about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="./contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+			<pre><code class="prettyprint lang-css">.header-mainnav {
+	background-color: #277D82;
+	box-shadow: none;
+	min-width: 50%;
+	top: 78px;
+}</code></pre>
+
+			<pre><code class="prettyprint lang-js">var mobileMenuButton = document.getElementById("mobileMenuButton");
+var mobileMenu = document.querySelector(".header-mainnav");
+</code></pre>
+		</div>
+
 		<a class="back-to-top hidden" href="#top"><span class="fas fa-arrow-circle-up"><span class="sr-only">Back to Top</span></span></a>
 	</div>
 
@@ -115,8 +137,12 @@
 	</footer>
 
 	<!-- Footer Scripts -->
-	<script type="text/javascript" src="scripts/vue.js"></script>
-	<script type="text/javascript" src="scripts/site-scripts.js"></script>
+	<script type="text/javascript" src="./scripts/google-code-prettify/prettify.js"></script>
+	<script type="text/javascript" src="./scripts/vue.js"></script>
+	<script type="text/javascript" src="./scripts/site-scripts.js"></script>
+	<script>
+		PR.prettyPrint();
+	</script>
 </body>
 
 </html>

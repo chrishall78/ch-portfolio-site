@@ -315,6 +315,41 @@ div[role="main"] {
 	animation-name: fadeOutRight;
 }
 
+/* CODE FORMATTING
+----------------------------------------------- */
+
+pre {
+	background-color: #ffffff;
+	padding: 2em 1em 1em 1em;
+	position: relative;
+	margin: 1em 0;
+}
+
+code {
+	font-family: "Fira Mono", monospace;
+}
+
+code::before {
+	font-family: "Lato", Helvetica, Arial, sans-serif;
+	font-size: 0.875em;
+	font-weight: bold;
+	position: absolute;
+	left: 0.75em;
+	top: 0.5em;
+}
+
+code.lang-html::before {
+	content: "HTML";
+}
+
+code.lang-css::before {
+	content: "CSS";
+}
+
+code.lang-js::before {
+	content: "Javascript";
+}
+
 /* MEDIA QUERIES - MIN-WIDTH
 ------------------------------------------------ */
 
