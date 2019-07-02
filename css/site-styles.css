@@ -331,6 +331,14 @@ div[role="main"] {
 	color: #000000;
 }
 
+.work-card .content .tags span::after {
+	content: ", "
+}
+
+.work-card .content .tags span:last-of-type::after {
+	content: "";
+}
+
 /* ANIMATIONS
 ----------------------------------------------- */
 
