@@ -27,7 +27,7 @@ var workData = {
 	"portfolio": [
 		{
 			"name": "Kalaeloa Partners",
-			"description": "I worked with Anthology Marketing Group to build a website for Kalaeloa Partners, an energy company located on Oahu, Hawaii. In addition to the front end build, I integrated the site into Wordpress usng custom fields and custom post types.",
+			"description": "I worked with AMG to build a website for Kalaeloa Partners, an energy company located on Oahu, Hawaii. In addition to the front end build, I integrated the site into Wordpress usng custom fields and custom post types.",
 			"date": "Nov 2019",
 			"liveSiteUrl": "#",
 			"liveSiteText": "Not Launched Yet",
@@ -38,7 +38,7 @@ var workData = {
 		},
 		{
 			"name": "Pomaika'i Ballrooms",
-			"description": "I worked with Anthology Marketing Group to revamp the website for Pomaika'i Ballrooms, a social event space and catering company. The focus of the rebrand was to showcase the event space and food menus, plus make it easier to plan an event.",
+			"description": "I worked with AMG to revamp the website for Pomaika'i Ballrooms, a social event space and catering company. The focus of the rebrand was to showcase the event space and food menus, plus make it easier to plan an event.",
 			"date": "Oct 2019",
 			"liveSiteUrl": "https://www.pomaikaiballrooms.com/",
 			"liveSiteText": "pomaikaiballrooms.com",
@@ -49,7 +49,7 @@ var workData = {
 		},
 		{
 			"name": "Pualeilani Atrium Shops",
-			"description": "I worked with Anthology Marketing Group to rebrand Pualeilani Atrium Shops' website, a shopping center located within the Hyatt Regency Waikiki Beach Resort &amp; Spa. The site features a dynamic listing of stores, dining, events, plus an interactive directory map.",
+			"description": "I worked with AMG to rebrand Pualeilani Atrium Shops' website, a shopping center located within the Hyatt Regency Waikiki Beach Resort &amp; Spa. The site features a dynamic listing of stores, dining, events, plus an interactive directory map.",
 			"date": "Sep 2019",
 			"liveSiteUrl": "https://www.pualeilanishops.com/",
 			"liveSiteText": "pualeilanishops.com",
@@ -60,7 +60,7 @@ var workData = {
 		},
 		{
 			"name": "Zippy's Restaurant",
-			"description": "I worked with Anthology Marketing Group to rebrand the website for Zippy's, an iconic Hawaii restaurant. This was timed with offering new &quot;Order &amp; Pickup&quot; functionality via a 3rd party service.",
+			"description": "I worked with AMG to redesign the website for Zippy's, an iconic Hawaii restaurant. This was timed with offering new &quot;Order &amp; Pickup&quot; functionality via a 3rd party service.",
 			"date": "May 2019",
 			"liveSiteUrl": "https://www.zippys.com/",
 			"liveSiteText": "zippys.com",
@@ -71,7 +71,7 @@ var workData = {
 		},
 		{
 			"name": "Servco Corporate",
-			"description": "I worked with Anthology Marketing Group to update the corporate website for Servco. We built a responsive, accessible site to help them highlight their 100 year anniversary.",
+			"description": "I worked with AMG to update the corporate website for Servco, an automotive retail and distribution company. We built a responsive, accessible site to help them highlight their 100 year anniversary.",
 			"date": "Feb 2019",
 			"liveSiteUrl": "https://www.servco.com/",
 			"liveSiteText": "servco.com",
@@ -82,18 +82,18 @@ var workData = {
 		},
 		{
 			"name": "HTA Partner Opportunities",
-			"description": "I worked with Anthology Marketing Group to build a web application for HTA, so they can manage opportunities to promote Hawaii as a travel/tourism destination. This public portion of the app is to collect info from people interested in the posted opportunities.",
+			"description": "I worked with AMG to build a web application for HTA, so they can manage opportunities to promote Hawaii as a travel/tourism destination. This public portion of the app is to collect info from people interested in the posted opportunities.",
 			"date": "Feb 2019",
 			"liveSiteUrl": "https://www.hawaiitourismauthority.org//what-we-do/partner-opportunities/",
 			"liveSiteText": "hawaiitourismauthority.org",
 			"thumbImageUrl": "./images/work/HTA-Partner-Opportunities-Thumb.jpg",
 			"topImageUrl": "./images/work/HTA-Partner-Opportunities-Top.jpg",
 			"tags": ["Front-end dev", "WCAG 2.0 AA compliance"],
-			"published": 1
+			"published": 0
 		},
 		{
 			"name": "Kobayashi Group",
-			"description": "I worked with Anthology Marketing Group to rebrand the Kobayashi Group website. The new site showcases the real estate properties that they have developed, provides a section for news posts, and provides more information about the company and executive team.",
+			"description": "I worked with AMG to rebrand the Kobayashi Group website. The new site showcases the real estate properties that they have developed, provides a section for news posts, and provides more information about the company and executive team.",
 			"date": "Nov 2018",
 			"liveSiteUrl": "https://www.kobayashi-group.com/",
 			"liveSiteText": "Not Launched Yet",
@@ -104,7 +104,7 @@ var workData = {
 		},
 		{
 			"name": "Halekulani",
-			"description": "I worked with Anthology Marketing Group on implementing a light redesign of the Halekulani website, featuring a new header/footer, home page, and cultural calendar.",
+			"description": "I worked with AMG on implementing a light redesign of the Halekulani website, featuring a new header/footer, home page, and cultural calendar.",
 			"date": "Sep 2018",
 			"liveSiteUrl": "https://www.halekulani.com/",
 			"liveSiteText": "halekulani.com",
@@ -115,7 +115,7 @@ var workData = {
 		},
 		{
 			"name": "Hawaii Tourism Authority",
-			"description": "I worked with Anthology Marketing Group to make the Hawaii Tourism Authority's website attractive, responsive and accessible. It features an extensive research section, and information on Hawaii programs, cultural and natural resources.",
+			"description": "I worked with AMG to make the Hawaii Tourism Authority's website attractive, responsive and accessible. It features an extensive research section, and information on Hawaii programs, cultural and natural resources.",
 			"date": "Jun 2018",
 			"liveSiteUrl": "https://www.hawaiitourismauthority.org/",
 			"liveSiteText": "hawaiitourismauthority.org",
@@ -126,7 +126,7 @@ var workData = {
 		},
 		{
 			"name": "Foodland",
-			"description": "I worked with Anthology Marketing Group on this rebrand of the Foodland website, and assisted with the integration into their Drupal content management system. ",
+			"description": "I worked with AMG on this rebrand of the Foodland website, and assisted with the integration into their Drupal content management system. ",
 			"date": "Sep 2017",
 			"liveSiteUrl": "https://www.foodland.com/",
 			"liveSiteText": "foodland.com",
@@ -137,7 +137,7 @@ var workData = {
 		},
 		{
 			"name": "Drive Electric Hawaii",
-			"description": "I worked with Anthology Marketing Group on this website promoting the use of electric vehicles in Hawaii.",
+			"description": "I worked with AMG on this website promoting the use of electric vehicles (EV) in Hawaii.",
 			"date": "Aug 2017",
 			"liveSiteUrl": "https://www.driveelectrichi.com/",
 			"liveSiteText": "driveelectrichi.com",
@@ -148,7 +148,7 @@ var workData = {
 		},
 		{
 			"name": "Aloha Pacific FCU",
-			"description": "I worked with Anthology Marketing Group to update the website for Aloha Pacific FCU, making it mobile friendly and accessible. I also worked on associated sites for credit unions they later acquired.",
+			"description": "I worked with AMG to update the website for Aloha Pacific FCU, making it mobile friendly and accessible. I also worked on associated sites for credit unions they later acquired.",
 			"date": "Sep 2016",
 			"liveSiteUrl": "https://www.alohapacific.com/",
 			"liveSiteText": "alohapacific.com",

@@ -1,9 +1,39 @@
 // Set year for copyright in footer
-new Vue({
+var vueCopyright = new Vue({
 	el: ".copyright-year",
 	data: {
 		copyright: new Date().getFullYear()
 	}
+});
+
+var vueIntro = new Vue({
+	el: "#intro",
+	data: {
+		introBackground: [
+			{ photoUrl: "./images/intro/mohammad-ali-berenji-unsplash.jpg", creditText: "Photo by Mohammad Ali Berenji on Unsplash", creditUrl: "https://unsplash.com/@mberenji" },
+			{ photoUrl: "./images/intro/jules-d-unsplash.jpg", creditText: "Photo by Jules D. on Unsplash", creditUrl: "https://unsplash.com/@varietou" },
+			{ photoUrl: "./images/intro/eriks-abzinovs-unsplash.jpg", creditText: "Photo by Eriks Abzinovs on Unsplash", creditUrl: "https://unsplash.com/@pixworthmedia" },
+			{ photoUrl: "./images/intro/pawel-czerwinski-unsplash.jpg", creditText: "Photo by Paweł Czerwiński on Unsplash", creditUrl: "https://unsplash.com/@pawel_czerwinski" },
+		],
+	},
+	computed: {
+		selectedBackground: function() {
+			return Math.floor(Math.random() * this.introBackground.length);
+		},
+		introPhotoUrl: function() {
+			return { backgroundImage: "url('" + this.introBackground[this.selectedBackground].photoUrl + "')" };
+		},
+		introCaptionText: function() {
+			return this.introBackground[this.selectedBackground].creditText;
+		},
+		introCaptionUrl: function() {
+			return this.introBackground[this.selectedBackground].creditUrl;
+		},
+	}
+});
+
+$(document).ready(function() {
+	$(".work-card .thumbnail").magnificPopup({type:'image'});
 });
 
 /* ---- Mobile Menu Open/Close ---- */
