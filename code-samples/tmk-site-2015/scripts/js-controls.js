@@ -72,7 +72,7 @@ $(document).ready(function($) {
 	$("select#propertyCode").change(function() {
 		$('#reservations-console input[name="isSearch"]').remove();
 		if ($("select option:selected").hasClass('maunakbh')) {
-			$('#reservations-console').attr("action","http://www.marriott.com/reservation/availabilitySearch.mi");
+			$('#reservations-console').attr("action","https://www.marriott.com/reservation/availabilitySearch.mi");
 			$('#reservations-console').attr('method','post');
 			$('#reservations-console').addClass("track-crossdomain");
 			$('#reservations-console').prepend('<input type="hidden" value="false" name="isSearch"/>');
@@ -94,7 +94,7 @@ $(document).ready(function($) {
 			$('div.hapuna-mssg').hide();
 			$('div.waikiki-mssg').show();
 		} else {
-			$('#reservations-console').removeClass("track-crossdomain").attr("action","http://www.marriott.com/reservation/availabilitySearch.mi");
+			$('#reservations-console').removeClass("track-crossdomain").attr("action","https://www.marriott.com/reservation/availabilitySearch.mi");
 			$('#reservations-console').attr('method','post');
 			$('div.mauna-mssg').hide();
 			$('div.hapuna-mssg').hide();
