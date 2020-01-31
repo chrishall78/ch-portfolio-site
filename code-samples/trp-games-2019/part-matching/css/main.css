@@ -1,0 +1,294 @@
+/*
+ * @license
+ * MyFonts Webfont Build ID 3440819, 2017-08-22T16:54:34-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: FranklinGothicURW-Lig by URW++
+ * URL: https://www.myfonts.com/fonts/urw/franklin-gothic/t-light/
+ * Copyright: (URW)++,Copyright 2006 by (URW)++ Design &amp; Development
+ * 
+ * Webfont: FranklinGothicURW-Boo by URW++
+ * URL: https://www.myfonts.com/fonts/urw/franklin-gothic/t-book/
+ * Copyright: (URW)++,Copyright 2006 by (URW)++ Design &amp; Development
+ * 
+ * Webfont: FranklinGothicURW-Med by URW++
+ * URL: https://www.myfonts.com/fonts/urw/franklin-gothic/t-medium/
+ * Copyright: (URW)++,Copyright 2006 by (URW)++ Design &amp; Development
+ * 
+ * Webfont: FranklinGothicURW-Dem by URW++
+ * URL: https://www.myfonts.com/fonts/urw/franklin-gothic/t-demi/
+ * Copyright: (URW)++,Copyright 2006 by (URW)++ Design &amp; Development
+ * 
+ * Webfont: FranklinGothicURW-Hea by URW++
+ * URL: https://www.myfonts.com/fonts/urw/franklin-gothic/t-heavy/
+ * Copyright: (URW)++,Copyright 2006 by (URW)++ Design &amp; Development
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3440819
+ * Licensed pageviews: 200,000
+ * 
+ * � 2017 MyFonts Inc
+*/
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("https://hello.myfonts.net/count/3480b3");
+
+@font-face {
+	font-family: 'FranklinGothicURW-Lig';
+	src: url('../fonts/3480B3_0_0.eot');
+	src: url('../fonts/3480B3_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/3480B3_0_0.woff2') format('woff2'), url('../fonts/3480B3_0_0.woff') format('woff'), url('../fonts/3480B3_0_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'FranklinGothicURW-Boo';
+	src: url('../fonts/3480B3_1_0.eot');
+	src: url('../fonts/3480B3_1_0.eot?#iefix') format('embedded-opentype'), url('../fonts/3480B3_1_0.woff2') format('woff2'), url('../fonts/3480B3_1_0.woff') format('woff'), url('../fonts/3480B3_1_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'FranklinGothicURW-Med';
+	src: url('../fonts/3480B3_2_0.eot');
+	src: url('../fonts/3480B3_2_0.eot?#iefix') format('embedded-opentype'), url('../fonts/3480B3_2_0.woff2') format('woff2'), url('../fonts/3480B3_2_0.woff') format('woff'), url('../fonts/3480B3_2_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'FranklinGothicURW-Dem';
+	src: url('../fonts/3480B3_8_0.eot');
+	src: url('../fonts/3480B3_8_0.eot?#iefix') format('embedded-opentype'), url('../fonts/3480B3_8_0.woff2') format('woff2'), url('../fonts/3480B3_8_0.woff') format('woff'), url('../fonts/3480B3_8_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'FranklinGothicURW-Hea';
+	src: url('../fonts/3480B3_9_0.eot');
+	src: url('../fonts/3480B3_9_0.eot?#iefix') format('embedded-opentype'), url('../fonts/3480B3_9_0.woff2') format('woff2'), url('../fonts/3480B3_9_0.woff') format('woff'), url('../fonts/3480B3_9_0.ttf') format('truetype');
+}
+
+
+root { 
+	display: block;
+}
+
+body{
+	background-color: rgb(1,82,156);
+	background-repeat: repeat-x;
+	background-position: top;
+	/*background-image: url(../sprites/bg_tile.jpg);*/
+	overflow: hidden;
+}
+
+*, *:before, *:after {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+	 
+input, input:before, input:after {
+	-webkit-user-select: initial;
+	-khtml-user-select: initial;
+	-moz-user-select: initial;
+	-ms-user-select: initial;
+	user-select: initial;
+}
+
+.game-container {
+	height: 1080px;
+	min-height: 1080px;
+	min-width: 1920px;
+	width: 1920px;
+	margin: 0 auto;
+}
+
+::selection { background: transparent;color:inherit; }
+::-moz-selection { background: transparent;color:inherit; }
+
+#canvas{
+	position: fixed;
+	z-index: 200;
+}
+
+canvas {
+	image-rendering: optimizeSpeed;
+	image-rendering:-o-crisp-edges;
+	image-rendering:-webkit-optimize-contrast;
+	-ms-interpolation-mode: nearest-neighbor;
+	-ms-touch-action: none;
+}
+
+.ani_hack{
+	-webkit-perspective: 1000;
+	-webkit-backface-visibility: hidden;
+	
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	outline: none;
+	-webkit-tap-highlight-color: transparent; /* mobile webkit */
+}
+
+/***************FONTS*******************/
+.check-fonts{
+		position: fixed;
+		opacity:0;
+}
+
+.check-font-1{
+		font-family: 'FranklinGothicURW-Hea';
+}
+
+.game-background {
+	position: fixed;
+	background-color: rgb(1,82,156);
+	background-image: url("../sprites/trp-road.png"), radial-gradient(circle, rgba(1,82,156,1) 36%, rgba(0,42,137,1) 100%);
+	background-repeat: no-repeat;
+	background-position: 0% 100%, 50% 50%;
+	background-size: 33%, 100%;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.trp-logo {
+	-webkit-transform: translateY(-50%);
+	left: 3vw;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.trp-logo img {
+	width: 20vw;
+}
+
+
+.stroke {
+	-webkit-text-fill-color: #fff;
+	-webkit-text-stroke: 1px #f00;
+	color: #fff;
+	text-shadow: 3px 3px 0 #f00, 
+				-1px -1px 0 #f00,
+				1px -1px 0 #f00,
+				-1px 1px 0 #f00,
+				1px 1px 0 #f00;
+}
+
+.high-scores {
+	-webkit-transform: translateY(-50%);
+	color: #fff;
+	font-size: 2vw;
+	position: absolute;
+	right: 3vw;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 9em;
+}
+
+.high-scores th {
+	font-family: 'FranklinGothicURW-Dem';
+	font-weight: bold;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+.high-scores td {
+	color: #fff;
+	font-family: 'FranklinGothicURW-Boo';
+	text-align: right;
+	text-transform: uppercase;
+}
+
+.high-scores .stroke td {
+	color: #fff;
+}
+
+.high-scores h2 {
+	font-size: 2.5vw;
+	text-transform: uppercase;
+	margin: 0 0 0.5em 0;
+	font-family: 'FranklinGothicURW-Med';
+}
+
+.reset-high-scores {
+	margin-top: 1em;
+	z-index: 1;
+}
+
+.reset-high-scores.hidden {
+	display: none;
+}
+
+.reset-high-scores button {
+	background-color: #ffffff;
+	border-radius: 10px;
+	border: 2px solid #000000;
+	color: #000000;
+	font-family: 'FranklinGothicURW-Med';
+	font-size: 1.5vw;
+	padding: 0.5em 1em;
+	text-transform: uppercase;
+}
+
+.return-to-title {
+	position: absolute;
+	bottom: 13vw;
+	left: 3vw;
+}
+
+.button:link, .button:visited {
+	background-color: #ffffff;
+	background-image: linear-gradient(to bottom, #ffffff 0%, #e6e6e6 100%);
+	border-radius: 0.5em;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+	color: #0e3f6b;
+	display: inline-block;
+	font-family: "FranklinGothicURW-Med", Arial, Helvetica, sans-serif;
+	font-size: 2vw;
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding: 0.5em 1em;
+	text-decoration: none;
+}
+
+.button:hover, .button:focus, .button:active {
+	background-color: #ffffff;
+	background-image: linear-gradient(to bottom, #e6e6e6 0%, #ffffff 100%);
+	box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.button.red:link, .button.red:visited {
+	background-color: #e31d1a;
+	background-image: linear-gradient(to bottom, #e31d1a 0%, #c61717 100%);
+	color: #ffffff;
+	font-family: "FranklinGothicURW-Med", Arial, Helvetica, sans-serif;
+}
+
+.button.red:hover, .button.red:focus, .button.red:active {
+	background-color: #c61717;
+	background-image: linear-gradient(to bottom, #c61717 0%, #e31d1a 100%);
+}
+
+.button.blue:link, .button.blue:visited {
+	background-color: #01529c;
+	background-image: linear-gradient(to bottom, #01529c 0%, #002d8a 100%);
+	color: #ffffff;
+	font-family: "FranklinGothicURW-Med", Arial, Helvetica, sans-serif;
+}
+
+.button.blue:hover, .button.blue:focus, .button.blue:active {
+	background-color: #002d8a;
+	background-image: linear-gradient(to bottom, #002d8a 0%, #01529c 100%);
+}
+
+.button.upper {
+	text-transform: uppercase;
+}

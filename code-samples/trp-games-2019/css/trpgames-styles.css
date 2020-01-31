@@ -1,0 +1,639 @@
+/*
+ * @license
+ * MyFonts Webfont Build ID 3440819, 2017-08-22T16:54:34-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: FranklinGothicURW-Lig by URW++
+ * URL: https://www.myfonts.com/fonts/urw/franklin-gothic/t-light/
+ * Copyright: (URW)++,Copyright 2006 by (URW)++ Design &amp; Development
+ * 
+ * Webfont: FranklinGothicURW-Boo by URW++
+ * URL: https://www.myfonts.com/fonts/urw/franklin-gothic/t-book/
+ * Copyright: (URW)++,Copyright 2006 by (URW)++ Design &amp; Development
+ * 
+ * Webfont: FranklinGothicURW-Med by URW++
+ * URL: https://www.myfonts.com/fonts/urw/franklin-gothic/t-medium/
+ * Copyright: (URW)++,Copyright 2006 by (URW)++ Design &amp; Development
+ * 
+ * Webfont: FranklinGothicURW-Dem by URW++
+ * URL: https://www.myfonts.com/fonts/urw/franklin-gothic/t-demi/
+ * Copyright: (URW)++,Copyright 2006 by (URW)++ Design &amp; Development
+ * 
+ * Webfont: FranklinGothicURW-Hea by URW++
+ * URL: https://www.myfonts.com/fonts/urw/franklin-gothic/t-heavy/
+ * Copyright: (URW)++,Copyright 2006 by (URW)++ Design &amp; Development
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3440819
+ * Licensed pageviews: 200,000
+ * 
+ * � 2017 MyFonts Inc
+*/
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("https://hello.myfonts.net/count/3480b3");
+
+@font-face {
+	font-family: 'FranklinGothicURW-Lig';
+	src: url('../fonts/3480B3_0_0.eot');
+	src: url('../fonts/3480B3_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/3480B3_0_0.woff2') format('woff2'), url('../fonts/3480B3_0_0.woff') format('woff'), url('../fonts/3480B3_0_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'FranklinGothicURW-Boo';
+	src: url('../fonts/3480B3_1_0.eot');
+	src: url('../fonts/3480B3_1_0.eot?#iefix') format('embedded-opentype'), url('../fonts/3480B3_1_0.woff2') format('woff2'), url('../fonts/3480B3_1_0.woff') format('woff'), url('../fonts/3480B3_1_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'FranklinGothicURW-Med';
+	src: url('../fonts/3480B3_2_0.eot');
+	src: url('../fonts/3480B3_2_0.eot?#iefix') format('embedded-opentype'), url('../fonts/3480B3_2_0.woff2') format('woff2'), url('../fonts/3480B3_2_0.woff') format('woff'), url('../fonts/3480B3_2_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'FranklinGothicURW-Dem';
+	src: url('../fonts/3480B3_8_0.eot');
+	src: url('../fonts/3480B3_8_0.eot?#iefix') format('embedded-opentype'), url('../fonts/3480B3_8_0.woff2') format('woff2'), url('../fonts/3480B3_8_0.woff') format('woff'), url('../fonts/3480B3_8_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'FranklinGothicURW-Hea';
+	src: url('../fonts/3480B3_9_0.eot');
+	src: url('../fonts/3480B3_9_0.eot?#iefix') format('embedded-opentype'), url('../fonts/3480B3_9_0.woff2') format('woff2'), url('../fonts/3480B3_9_0.woff') format('woff'), url('../fonts/3480B3_9_0.ttf') format('truetype');
+}
+
+/* GENERAL STYLES
+----------------------------------------------- */
+div[role="main"] {
+	background-color: #002a89;
+	background-image: linear-gradient(to right, #002a89 0%, #01529c 50%, #002a89 100%);
+	border: 1vw solid #ffffff;
+	height: 100%;
+	position: fixed;
+	width: 100%;
+	z-index: 0;
+}
+
+.button:link, .button:visited {
+	background-color: #ffffff;
+	background-image: linear-gradient(to bottom, #ffffff 0%, #e6e6e6 100%);
+	border-radius: 0.5em;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+	color: #0e3f6b;
+	display: inline-block;
+	font-family: "FranklinGothicURW-Med", Arial, Helvetica, sans-serif;
+	font-size: 2.25vw;
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding: 1em;
+	text-decoration: none;
+}
+
+.button:hover, .button:focus, .button:active {
+	background-color: #ffffff;
+	background-image: linear-gradient(to bottom, #e6e6e6 0%, #ffffff 100%);
+	box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.button.red:link, .button.red:visited {
+	background-color: #e31d1a;
+	background-image: linear-gradient(to bottom, #e31d1a 0%, #c61717 100%);
+	color: #ffffff;
+	font-family: "FranklinGothicURW-Med", Arial, Helvetica, sans-serif;
+}
+
+.button.red:hover, .button.red:focus, .button.red:active {
+	background-color: #c61717;
+	background-image: linear-gradient(to bottom, #c61717 0%, #e31d1a 100%);
+}
+
+.button.blue:link, .button.blue:visited {
+	background-color: #01529c;
+	background-image: linear-gradient(to bottom, #01529c 0%, #002d8a 100%);
+	color: #ffffff;
+	font-family: "FranklinGothicURW-Med", Arial, Helvetica, sans-serif;
+}
+
+.button.blue:hover, .button.blue:focus, .button.blue:active {
+	background-color: #002d8a;
+	background-image: linear-gradient(to bottom, #002d8a 0%, #01529c 100%);
+}
+
+.button.upper {
+	text-transform: uppercase;
+}
+
+/* INTRO SCREEN
+----------------------------------------------- */
+.img-deco {
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	width: 40%;
+	z-index: 1;
+}
+
+.intro-text-area {
+	-webkit-transform: translateX(-50%) translateY(-40%);
+	left: 50%;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	transform: translateX(-50%) translateY(-40%);
+	width: 80%;
+}
+
+.intro-text-area img {
+	display: inline-block;
+	margin-bottom: 4vw;
+	max-width: 50%;
+}
+
+.intro-text-area .button {
+	font-size: 2.25vw;
+	letter-spacing: 0;
+	line-height: 1.2;
+	margin-bottom: 0;
+	padding: 1.5vw;
+	width: 100%;
+}
+
+/* TRIVIA GAME
+----------------------------------------------- */
+.trivia-game-screen {
+	height: 86%;
+	left: 0;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 100%;
+}
+
+.trivia-game-actions {
+	bottom: 0;
+	height: 14%;
+	left: 0;
+	padding-top: 1em;
+	position: absolute;
+	width: 100%;
+}
+
+.trivia-game-actions img {
+	max-width: 360px;
+}
+
+.trivia-game-actions .button:link, .trivia-game-actions .button:visited {
+	font-family: "FranklinGothicURW-Med", Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	line-height: 1;
+	padding: 0.75em 1em;
+	width: 70%;
+}
+
+.progress-container {
+	-webkit-transition: opacity 0.5s ease 0s;
+	margin: 0 auto;
+	opacity: 0;
+	padding-bottom: 3vw;
+	padding-top: 5vw;
+	transition: opacity 0.5s ease 0s;
+	width: 70%;
+}
+
+.progress-container.visible {
+	opacity: 1;
+}
+
+.progress-line {
+	background-image: linear-gradient(to right, #ffffff 0%, #ffffff 16%, #79a4cb 16%, #79a4cb 100%);
+	height: 0.375vw;
+	width: 100%;
+	z-index: -1;
+}
+
+.progress-line.step1 {
+	background-image: linear-gradient(to right, #ffffff 0%, #ffffff 33%, #79a4cb 33%, #79a4cb 100%);
+}
+
+.progress-line.step2 {
+	background-image: linear-gradient(to right, #ffffff 0%, #ffffff 66%, #79a4cb 66%, #79a4cb 100%);
+}
+
+.progress-line.step3 {
+	background-image: linear-gradient(to right, #ffffff 0%, #ffffff 100%);
+}
+
+.progress-bar {
+	counter-reset: step;
+	margin-top: -1.75vw;
+	padding-left: 0;
+}
+
+.progress-bar li {
+	color: #ffffff;
+	float: left;
+	font-size: 1vw;
+	font-weight: bold;
+	list-style-type: none;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	width: 33.33%;
+}
+
+.progress-bar li:after {
+	background-color: #01529c;
+	border-radius: 50%;
+	border: 5px solid #ffffff;
+	content: counter(step);
+	counter-increment: step;
+	display: block;
+	font-family: "FranklinGothicURW-Med", Arial, Helvetica, sans-serif;
+	font-size: 2vw;
+	height: 3vw;
+	line-height: 2.5vw;
+	margin: 0 auto 0 auto;
+	text-align: center;
+	width: 3vw;
+}
+
+.progress-bar li.completed {
+	color: #01529c;
+}
+
+.progress-bar li.completed:after {
+	background-color: #ffffff;
+	border-color: #ffffff;
+	color: #01529c;
+}
+
+.progress-bar li.current-step::before {
+	background-image: url('../images/icon-truck.png');
+	background-repeat: no-repeat;
+	background-size: 6vw;
+	bottom: 1.75vw;
+	content: "";
+	height: 100%;
+	left: 1vw;
+	position: absolute;
+	width: 100%;
+}
+
+.question-template {
+	margin-top: 2vw;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s ease 0s;
+	transition: opacity 0.5s ease 0s;
+}
+
+.question-template.visible {
+	opacity: 1;
+}
+
+.question-template .question {
+	color: #ffffff;
+	font-family: "FranklinGothicURW-Med", Arial, Helvetica, sans-serif;
+	font-size: 2.5vw;
+	line-height: 1.25;
+	margin: 0 15%;
+	max-width: 70%;
+}
+
+.question-template .label {
+	color: #ffffff;
+	font-family: "FranklinGothicURW-Lig", Arial, Helvetica, sans-serif;
+	font-size: 2vw;
+	letter-spacing: 1px;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.question-template .answer-choices {
+	margin: 1em 25% 0em 25%;
+	max-width: 50%;
+}
+
+.question-template .answer-choices .col-xs {
+	-ms-flex-preferred-size: 100%;
+	-webkit-flex-basis: 100%;
+	flex-basis: 100%;
+	max-width: 100%;
+}
+
+.question-template .answer-choices.four {
+	margin: 2em 20% 0 20%;
+	max-width: 60%;
+}
+
+.question-template .answer-choices.four .col-xs {
+	-ms-flex-preferred-size: 50%;
+	-webkit-flex-basis: 50%;
+	flex-basis: 50%;
+	max-width: 50%;
+}
+
+.question-template .answer-choices .button {
+	line-height: 1.2;
+	margin-top: 1em;
+	padding: 0.5em 1em;
+	width: 100%;
+}
+
+.answer-template {
+	margin-top: 2vw;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s ease 0s;
+	transition: opacity 0.5s ease 0s;
+}
+
+.answer-template.visible {
+	opacity: 1;
+}
+
+.answer-template > * {
+	color: #ffffff;
+	font-family: "FranklinGothicURW-Lig", Arial, Helvetica, sans-serif;
+}
+
+.answer-template .answer {
+	font-family: "FranklinGothicURW-Med", Arial, Helvetica, sans-serif;
+	font-size: 2.5vw;
+	margin: 0 20%;
+	max-width: 60%;
+}
+
+.answer-template .label {
+	font-size: 2vw;
+	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.answer-template .detail {
+	font-size: 2.5em;
+	margin: 1em 20% 0 20%;
+	max-width: 60%;
+}
+
+.answer-template .disclaimer {
+	font-size: 1.5em;
+	margin: 0.5em 20% 0 20%;
+	max-width: 60%;
+}
+
+.answer-template .next {
+	margin-top: 4em;
+}
+
+.answer-template .button:link, .answer-template .button:visited {
+	font-family: "FranklinGothicURW-Med", Arial, Helvetica, sans-serif;
+	padding: 1em 4em;
+}
+
+.results-template {
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-webkit-transition: opacity 0.5s ease 0s;
+	left: 50%;
+	opacity: 0;
+	position: absolute;
+	top: 57.5%;
+	transform: translateX(-50%) translateY(-50%);
+	transition: opacity 0.5s ease 0s;
+	width: 50%;
+}
+
+.results-template.visible {
+	opacity: 1;
+}
+
+.results-template img {
+	width: 12vw;
+}
+
+.results-template .results {
+	color: #ffffff;
+	font-family: "FranklinGothicURW-Lig", Arial, Helvetica, sans-serif;
+	font-size: 2.5vw;
+	margin: 1em 0 0 0;
+}
+
+.results-template .results span {
+	font-family: "FranklinGothicURW-Med", Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.results-template .thankyou {
+	color: #ffffff;
+	font-family: "FranklinGothicURW-Lig", Arial, Helvetica, sans-serif;
+	font-size: 2vw;
+	margin: 0 0 1.5em 0;
+}
+
+.results-template .button {
+	font-family: "FranklinGothicURW-Med", Arial, Helvetica, sans-serif;
+	padding: 1em 4em;
+}
+
+/* MEMORY MATCH GAME
+----------------------------------------------- */
+.match-game-directions {
+	height: 20%;
+	left: 0;
+	padding: 2.5vw 2vw 0 2vw;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.match-game-directions img {
+	max-width: 17vw;
+}
+
+.match-game-directions h1 {
+	color: #ffffff;
+	font-family: "FranklinGothicURW-Med", Arial, Helvetica, sans-serif;
+	font-size: 2.75vw;
+	letter-spacing: 1px;
+	line-height: 1.2;
+	margin: 0.125em 0;
+}
+
+.match-game-directions p {
+	color: #ffffff;
+	font-size: 1.4vw;
+	line-height: 1.35;
+	margin: 0.375em 0;
+}
+
+.match-game-screen {
+	bottom: 0;
+	height: 80%;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+
+.match-game-score {
+	height: 65%;
+	padding-right: 1em;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 0;
+	width: 20%;
+}
+
+.match-game-score .timer {
+	color: #ffffff;
+	font-family: "FranklinGothicURW-Hea", Arial, Helvetica, sans-serif;
+	font-size: 12vw;
+	line-height: 1;
+	margin: 2rem 0 0 0;
+}
+
+.match-game-score .timer.score {
+	font-size: 6vw;
+	margin-bottom: 0.5em;
+}
+
+.match-game-score .timer-desc {
+	color: #ffffff;
+	font-family: "FranklinGothicURW-Lig", Arial, Helvetica, sans-serif;
+	font-size: 3.5vw;
+	line-height: 1.2;
+	margin: 0;
+}
+
+.match-game-actions {
+	bottom: 0;
+	height: 28%;
+	padding: 0.5vw 1vw 0 0;
+	position: absolute;
+	right: 0;
+	width: 20%;
+}
+
+.match-game-actions .button {
+	display: block;
+	font-family: "FranklinGothicURW-Med", Arial, Helvetica, sans-serif;
+	font-size: 2.125vw;
+	font-weight: 400;
+	line-height: 1;
+	margin-bottom: 0.5em;
+	padding: 0.5em 1em;
+	text-align: center;
+	width: 100%;
+}
+
+.match-game-grid {
+	height: 100%;
+	padding: 0 2vw;
+	width: 80%;
+}
+
+.match-game-grid .col-xs {
+	-ms-flex-preferred-size: 20%;
+	-webkit-flex-basis: 20%;
+	-webkit-perspective: 800px;
+	flex-basis: 20%;
+	max-width: 20%;
+	padding: 0.5vw;
+	perspective: 800px;
+	position: relative;
+}
+
+.match-game-grid .card {
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: transform 0.5s ease 0s;
+	height: 9.5vw;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: transform 0.5s ease 0s;
+	width: 100%;
+}
+
+.match-game-grid .card .back,
+.match-game-grid .card .front {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	border-radius: 12px;
+	border: 0.25vw solid #ffffff;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+.match-game-grid .card .back {
+	background-color: #79a4cb;
+}
+
+.match-game-grid .card .front {
+	-webkit-transform: rotateY(180deg);
+	background-color: #ffffff;
+	transform: rotateY(180deg);
+}
+
+.match-game-grid .card .front img {
+	max-height: 100%;
+}
+
+.match-game-grid .card.flipped {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.match-game-grid .card.flipped.matched .front {
+	border: 0.25vw solid #e31d1a;
+}
+
+@media all and (-ms-high-contrast:none) {
+	.match-game-grid .card.flipped .front {
+		backface-visibility: visible;
+	}
+}
+
+/* LOCATIONS MAP
+----------------------------------------------- */
+.map-container {
+	margin: 1.5em 0;
+}
+
+.map-container [class*="col-"] {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.map-container img {
+	max-height: 855px;
+}
+
+.map-container iframe {
+	border: none;
+	display: block;
+	height: 855px;
+	width: 100%;
+}
+
+.map-actions {
+	color: #ffffff;
+}
+
+.map-actions h1 {
+	font-size: 3em;
+	margin: 0.25em 0;
+}
+
+.map-actions .button {
+	font-size: 2.25em;
+	letter-spacing: 0;
+	line-height: 1.2;
+	margin-bottom: 0;
+	padding: 0.75em;
+}

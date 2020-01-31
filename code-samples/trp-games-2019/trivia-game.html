@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>TRP Games - Trivia Game Screen</title>
+		
+		<!-- Meta data 
+		================================================== -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="language" content="english" />
+		<link href="./images/favicon-32.png" rel="icon" type="image/png" />
+		<link href="./images/favicon.ico" rel="shortcut icon" />
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="./css/base-styles.css">
+		<link rel="stylesheet" href="./css/trpgames-styles.css">
+
+		<!-- Javascript -->
+		<script src="./scripts/jquery-3.3.1.min.js"></script>
+	</head>
+
+	<body role="document" id="top">
+		<div role="main" id="mainContent">
+			<div class="trivia-game-container">
+				<div class="trivia-game-screen">
+					<div class="progress-container">
+						<div class="progress-line">&nbsp;</div>
+						<ul class="progress-bar">
+							<li class="current-step"></li>
+							<li class=""></li>
+							<li class=""></li>
+						</ul>
+					</div>
+					<div id="Question" class="question-template">
+					</div>
+					<div id="Answer" class="answer-template">
+					</div>
+					<div id="Results" class="results-template">
+					</div>
+				</div>
+				<div class="trivia-game-actions">
+					<div class="row center-xs middle-xs">
+						<div class="col-xs-4">
+							<a href="#" id="restartTrivia" class="button upper">Restart Game</a>
+						</div>
+						<div class="col-xs-4">
+							<a href="index.html" class="button red upper">Back to Title</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer Scripts -->
+		<script id="questionTemplate" type="text/x-jquery-tmpl">
+			<p class="label">Question:</p>
+			<p class="question">{{html Question}}</p>
+				<div class="row answer-choices {{if Answers.length > 3}}four{{/if}}">
+				{{each Answers}}
+				<div class="col-xs">
+					<a href="#" class="button" data-rightanswer="${RightAnswer}">${AnswerPosition}. ${Answer}</a>
+				</div>
+				{{/each}}
+			</div>
+		</script>
+		<script id="answerTemplate" type="text/x-jquery-tmpl">
+			<p class="label">Answer:</p>
+			<p class="answer">${AnswerPosition}. ${Answer}</p>
+			{{if AnswerDetail != ""}}
+			<p class="detail">{{html AnswerDetail}}</p>
+			{{/if}}
+			{{if AnswerDisclaimer != ""}}
+			<p class="disclaimer">{{html AnswerDisclaimer}}</p>
+			{{/if}}
+		</script>
+		<script id="resultsTemplate" type="text/x-jquery-tmpl">
+			<p><img src="./images/icon-truck-large.png" alt=""></p>
+			<p class="results">You Got <span>${finalScore}/${totalQuestions}</span> Correct</p>
+			<p class="thankyou">Thanks for playing!</p>
+			<p class="replay"><a href="#" class="button">Play Again?</a></p>
+		</script>
+		<script src="./scripts/jquery.tmpl.js" type="text/javascript"></script>
+		<script src="./scripts/trpgames-main.js" type="text/javascript"></script>
+		<script src="./scripts/idle.min.js" type="text/javascript"></script>
+		<script src="./scripts/trpgames-timeout.js" type="text/javascript"></script>
+	</body>
+</html>

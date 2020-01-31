@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TRP Matching Game</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+		<meta name="msapplication-tap-highlight" content="no"/>
+
+		<link rel="stylesheet" href="./css/reset.css" type="text/css">
+		<link rel="stylesheet" href="./css/main.css" type="text/css">
+		<link rel="stylesheet" href="./css/orientation_utils.css" type="text/css">
+
+		<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="./js/createjs.min.js"></script>
+		<script type="text/javascript" src="./js/screenfull.js"></script>
+		<script type="text/javascript" src="./js/howler.min.js"></script>
+		<script type="text/javascript" src="./js/hammer.min.js"></script>
+		<script type="text/javascript" src="./js/ctl_utils.js"></script>
+		<script type="text/javascript" src="./js/CVector2.js"></script>
+		<script type="text/javascript" src="./js/sprite_lib.js"></script>
+		<script type="text/javascript" src="./js/CSpritesheets.js"></script>
+		<script type="text/javascript" src="./js/settings.js"></script>        
+		<script type="text/javascript" src="./js/CLevelSettings.js"></script>
+		<script type="text/javascript" src="./js/CLang.js"></script>
+		<script type="text/javascript" src="./js/CPreloader.js"></script>
+		<script type="text/javascript" src="./js/CMain.js"></script>
+		<script type="text/javascript" src="./js/CTextButton.js"></script>
+		<script type="text/javascript" src="./js/CFormatText.js"></script>
+		<script type="text/javascript" src="./js/CFormatText2.js"></script>
+		<script type="text/javascript" src="./js/CToggle.js"></script>
+		<script type="text/javascript" src="./js/CGfxButton.js"></script>
+		<script type="text/javascript" src="./js/CMenu.js"></script>
+		<script type="text/javascript" src="./js/CGame.js"></script>
+		<script type="text/javascript" src="./js/CInterface.js"></script>
+		<script type="text/javascript" src="./js/CHelpPanel.js"></script>
+		<script type="text/javascript" src="./js/CEndPanel.js"></script>
+		<script type="text/javascript" src="./js/CPausePanel.js"></script>
+		<script type="text/javascript" src="./js/CCell.js"></script>
+		<script type="text/javascript" src="./js/CMovingCell.js"></script>
+		<script type="text/javascript" src="./js/CParticle.js"></script>
+		<script type="text/javascript" src="./js/CScoreText.js"></script>
+		<script type="text/javascript" src="./js/CCreditsPanel.js"></script>
+		<script type="text/javascript" src="./js/CAreYouSurePanel.js"></script>
+	</head>
+	<body ondragstart="return false;" ondrop="return false;" >
+		<div class="game-container">
+			<div class="game-background"></div>
+			
+			<!-- <div class="check-fonts">
+				<p class="check-font-1">test 1</p>
+			</div> -->
+			
+			<canvas id="canvas" class='ani_hack' width="900" height="1080"> </canvas>
+
+			<div data-orientation="portrait" class="orientation-msg-container"><p class="orientation-msg-text">Please rotate your device</p></div>
+
+			<div id="block_game" style="position: fixed; background-color: transparent; top: 0px; left: 0px; width: 100%; height: 100%; display:none"></div>
+
+			<div class="trp-logo"><img src="./sprites/trp-logo.png" alt="TRP Logo"></div>
+
+			<div class="return-to-title"><a href="../index.html" class="button red upper">Back to Title</a></div>
+
+			<div class="high-scores">
+				<h2>High Scores</h2>
+				<table>
+					<thead>
+						<tr>
+							<th width="31%">Rank</th>
+							<th width="69%">Score</th>
+						</tr>
+					</thead>
+					<tbody id="highscores-body">
+						<tr class=""><td>1st</td><td>20000</td></tr>
+						<tr class=""><td>2nd</td><td>18000</td></tr>
+						<tr class=""><td>3rd</td><td>16000</td></tr>
+						<tr class=""><td>4th</td><td>14000</td></tr>
+						<tr class=""><td>5th</td><td>12000</td></tr>
+						<tr class=""><td>6th</td><td>10000</td></tr>
+						<tr class=""><td>7th</td><td>8000</td></tr>
+						<tr class=""><td>8th</td><td>6000</td></tr>
+						<tr class=""><td>9th</td><td>4000</td></tr>
+						<tr class=""><td>10th</td><td>2000</td></tr>
+					</tbody>
+				</table>
+				<div class="reset-high-scores hidden">
+					<button id="reset-scores">Reset High Scores</button>
+				</div>
+			</div>
+		</div>
+
+		<script>
+		  $(document).ready(function(){
+			var oMain = new CMain({
+			  starting_time: 60000,                  //STARTING DURATION OF THE GAME (IN MS)
+			  scores_for_single: 85,                 //SCORE FOR SINGLE FRUIT DESTROYED
+			  scores_for_bomb: 150,                  //SCORE FOR BOMB DESTROYED
+			  extra_item_multiplier: 1.75,           //SCORE MULTIPLIER APPLIED FOR EXTRA ITEM DESTROYED
+			  
+			  hint_timer: 5000,                      //TIMER (IN MS) TO GET A HINT
+			  hourglass_add_time: 0,                 //TIME (IN MS) ADDED BY HOURGLASS
+			  quad_combo_time: 0,                    //TIME (IN MS) ADDED BY A COMBO OF 4 IDENTICAL FRUITS 
+			  quint_combo_time: 0,                   //TIME (IN MS) ADDED BY A COMBO OF 5 IDENTICAL FRUITS
+			  
+			  increase_to_4_fruits_goal_score:12000, //SCORE TO INCREASE THE NUMBER OF FRUITS TO 4 IN THE GAME
+			  increase_to_5_fruits_goal_score:22000, //SCORE TO INCREASE THE NUMBER OF FRUITS TO 5 IN THE GAME
+			  increase_to_6_fruits_goal_score:31000, //SCORE TO INCREASE THE NUMBER OF FRUITS TO 6 IN THE GAME
+			  increase_to_7_fruits_goal_score:39000, //SCORE TO INCREASE THE NUMBER OF FRUITS TO 7 IN THE GAME
+			  fullscreen:false,                      //SET THIS TO FALSE IF YOU DON'T WANT TO SHOW FULLSCREEN BUTTON
+			  check_orientation:false,               //SET TO FALSE IF YOU DON'T WANT TO SHOW ORIENTATION ALERT ON MOBILE DEVICES
+			});
+
+			// Disable soundtrack:
+			// CMain.js line 136
+			// CGame.js line 85
+
+			// Disable sound effects:
+			// Javscript files - look for "playSound" and "stopSound"
+
+			$(oMain).on("start_session", function(evt) {
+			  if(getParamValue('ctl-arcade') === "true"){
+				parent.__ctlArcadeStartSession();
+			  }
+
+			  //...ADD YOUR CODE HERE EVENTUALLY
+			  //console.log("start game - show branded UI");
+			});
+			 
+			$(oMain).on("end_session", function(evt) {
+			  if(getParamValue('ctl-arcade') === "true"){
+				parent.__ctlArcadeEndSession();
+			  }
+
+			  //...ADD YOUR CODE HERE EVENTUALLY
+			  //console.log("end game - hide branded UI");
+			});
+
+			$(oMain).on("restart_level", function(evt, iLevel) {
+			  if(getParamValue('ctl-arcade') === "true"){
+				parent.__ctlArcadeRestartLevel({level:iLevel});
+			  }
+
+			  //...ADD YOUR CODE HERE EVENTUALLY
+			});
+
+			$(oMain).on("save_score", function(evt,iScore) {
+				if(getParamValue('ctl-arcade') === "true"){
+					parent.__ctlArcadeSaveScore({score:iScore});
+				}
+
+				//...ADD YOUR CODE HERE EVENTUALLY
+				try {
+					storageValue = storageRow.getItem(storageKey);
+					lastRecordedScores = storageValue.split(",");
+					insertHighScore(lastRecordedScores, iScore);
+				} catch (error) {
+					return false;
+				}
+			});
+
+			$(oMain).on("start_level", function(evt, iLevel) {
+			  if(getParamValue('ctl-arcade') === "true"){
+				parent.__ctlArcadeStartLevel({level:iLevel});
+			  }
+
+			  //...ADD YOUR CODE HERE EVENTUALLY
+			});
+
+			$(oMain).on("end_level", function(evt,iLevel) {
+			  if(getParamValue('ctl-arcade') === "true"){
+				parent.__ctlArcadeEndLevel({level:iLevel});
+			  }
+
+			  //...ADD YOUR CODE HERE EVENTUALLY
+			});
+
+			$(oMain).on("show_interlevel_ad", function(evt) {
+			  if(getParamValue('ctl-arcade') === "true"){
+				parent.__ctlArcadeShowInterlevelAD();
+			  }
+
+			  //...ADD YOUR CODE HERE EVENTUALLY
+			});
+			
+			$(oMain).on("share_event", function(evt, iScore) {
+			  if(getParamValue('ctl-arcade') === "true"){
+				parent.__ctlArcadeShareEvent({ img: TEXT_SHARE_IMAGE,
+											   title: TEXT_SHARE_TITLE,
+											   msg: TEXT_SHARE_MSG1 + iScore + TEXT_SHARE_MSG2,
+											   msg_share: TEXT_SHARE_SHARE1 + iScore + TEXT_SHARE_SHARE1});
+			  }
+
+			  //...ADD YOUR CODE HERE EVENTUALLY
+			});
+   
+			if(isIOS()){ 
+				setTimeout(function(){sizeHandler();},200); 
+			}else{ 
+				sizeHandler(); 
+			}
+
+			/* High Scores Functionality */
+			var defaultScores = [20000,18000,16000,14000,12000,10000,8000,6000,4000,2000];
+			var currentScores = [];
+			var storageKey = "trp-mats-2019";
+			var storageRow = window.localStorage;
+			var storageValue;
+
+			// Attempt to use local storage for high scores, revert to session storage if that fails.
+			try {
+				storageValue = storageRow.getItem(storageKey);
+			} catch (error) {
+				storageRow = window.sessionStorage;
+				storageValue = storageRow.getItem(storageKey);
+				return false;
+			}
+
+			initHighScores();
+
+			$("#reset-scores").on("click", function(event){
+				event.preventDefault();
+				resetHighScores();
+			})
+
+			$(".reset-high-scores").addClass("hidden");
+
+			function initHighScores() {
+				if (storageValue === null) {
+					resetHighScores();
+				} else {
+					currentScores = storageValue.split(",");
+					populateHighScores(currentScores, 0);
+				}
+			}
+
+			function resetHighScores() {
+				populateHighScores(defaultScores, 0);
+				currentScores = defaultScores;
+			}
+
+			function insertHighScore(currentScores, highScore) {
+				newScores = currentScores;
+				newScores.push(highScore);
+				newScores.sort(function(a, b){ return b-a; });
+				newScores.pop(newScores.length);
+				populateHighScores(newScores, highScore);
+			}
+
+			function populateHighScores(scoreArray, highScore) {
+				scoresHTML = "";
+				highlighted = false;
+
+				for (var i = 0; i < scoreArray.length; i++) {
+					suffix = determineSuffix(i);
+					if (highScore == scoreArray[i] && !highlighted) {
+						highlightClass = "stroke";
+						highlighted = true;
+					} else {
+						highlightClass = "";
+					}
+					scoresHTML += "<tr class='"+highlightClass+"'><td>"+(i+1)+suffix+"</td><td>"+scoreArray[i]+"</td></tr>";
+				}
+
+				$("#highscores-body").html(scoresHTML);
+				storageRow.removeItem(storageKey);
+				storageRow.setItem(storageKey, scoreArray.join(","));
+			}
+
+			function determineSuffix(x) {
+				if (x == 0) { return "st"; }
+				else if (x == 1) { return "nd"; } 
+				else if (x == 2) { return "rd"; } 
+				else { return "th"; }
+			}
+			/* End High Scores Functionality */
+
+		  });
+		</script>
+	</body>
+</html>

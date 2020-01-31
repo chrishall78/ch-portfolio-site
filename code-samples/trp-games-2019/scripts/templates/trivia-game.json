@@ -1,0 +1,235 @@
+{"QuestionAnswers":[
+	{
+		"Question":"What is the PRIMARY purpose of the loyalty program?",
+		"Answers":[
+			{"AnswerPosition":"A","RightAnswer":true,"Answer":"Customer Retention"},
+			{"AnswerPosition":"B","RightAnswer":false,"Answer":"Incremental Sales"},
+			{"AnswerPosition":"C","RightAnswer":false,"Answer":"Acquire New Customers"}
+		],
+		"Answer":"Customer Retention",
+		"AnswerPosition":"A",
+		"AnswerDetail":"",
+		"AnswerDisclaimer":""
+	},
+	{
+		"Question":"What is the last day to redeem an offer?",
+		"Answers":[
+			{"AnswerPosition":"A","RightAnswer":false,"Answer":"End of day that the offer ends"},
+			{"AnswerPosition":"B","RightAnswer":false,"Answer":"Last business day of the month"},
+			{"AnswerPosition":"C","RightAnswer":true,"Answer":"Next business day after offer ends"}
+		],
+		"Answer":"Next business day after offer ends",
+		"AnswerPosition":"C",
+		"AnswerDetail":"",
+		"AnswerDisclaimer":""
+	},
+	{
+		"Question":"When do rewards expire?",
+		"Answers":[
+			{"AnswerPosition":"A","RightAnswer":false,"Answer":"30 days"},
+			{"AnswerPosition":"B","RightAnswer":true,"Answer":"90 days"},
+			{"AnswerPosition":"C","RightAnswer":false,"Answer":"Do Not Expire"}
+		],
+		"Answer":"90 days",
+		"AnswerPosition":"B",
+		"AnswerDetail":"",
+		"AnswerDisclaimer":""
+	},
+	{
+		"Question":"Which of the following ways are offers NOT communicated to your end customers?",
+		"Answers":[
+			{"AnswerPosition":"A","RightAnswer":false,"Answer":"Mail offers through flyers"},
+			{"AnswerPosition":"B","RightAnswer":false,"Answer":"Electronic mail campaigns"},
+			{"AnswerPosition":"C","RightAnswer":true,"Answer":"Text offer campaigns"}
+		],
+		"Answer":"Text offer campaigns",
+		"AnswerPosition":"C",
+		"AnswerDetail":"",
+		"AnswerDisclaimer":""
+	},
+	{
+		"Question":"Which of these actions does a customer NOT need to do to earn a reward?",
+		"Answers":[
+			{"AnswerPosition":"A","RightAnswer":false,"Answer":"Redeem 3 coupons"},
+			{"AnswerPosition":"B","RightAnswer":true,"Answer":"Spend $30 on TRP purchase"},
+			{"AnswerPosition":"C","RightAnswer":false,"Answer":"Coupons redeemed on different days"}
+		],
+		"Answer":"Spend $30 on TRP purchase",
+		"AnswerPosition":"B",
+		"AnswerDetail":"",
+		"AnswerDisclaimer":""
+	},
+	{
+		"Question":"PromoPort has sell sheets templates in six languages. Which of these is not correct?",
+		"Answers":[
+			{"AnswerPosition":"A","RightAnswer":false,"Answer":"Polish"},
+			{"AnswerPosition":"B","RightAnswer":true,"Answer":"Russian"},
+			{"AnswerPosition":"C","RightAnswer":false,"Answer":"Bosnian"}
+		],
+		"Answer":"Russian",
+		"AnswerPosition":"B",
+		"AnswerDetail":"",
+		"AnswerDisclaimer":""
+	},
+	{
+		"Question":"Which of these is a NOT a type of retail signage piece available in PromoPort?",
+		"Answers":[
+			{"AnswerPosition":"A","RightAnswer":false,"Answer":"Poster"},
+			{"AnswerPosition":"B","RightAnswer":false,"Answer":"Counter stand inserts"},
+			{"AnswerPosition":"C","RightAnswer":true,"Answer":"FAB sheets"}
+		],
+		"Answer":"FAB sheets",
+		"AnswerPosition":"C",
+		"AnswerDetail":"",
+		"AnswerDisclaimer":""
+	},
+	{
+		"Question":"Which of these points of purchase tools can generate more business by drawing attention from afar?",
+		"Answers":[
+			{"AnswerPosition":"A","RightAnswer":true,"Answer":"Poster"},
+			{"AnswerPosition":"B","RightAnswer":false,"Answer":"End cap"},
+			{"AnswerPosition":"C","RightAnswer":false,"Answer":"Shelf talker"}
+		],
+		"Answer":"Poster",
+		"AnswerPosition":"A",
+		"AnswerDetail":"",
+		"AnswerDisclaimer":""
+	},
+	{
+		"Question":"Which marketing display often influences impulse buys?",
+		"Answers":[
+			{"AnswerPosition":"A","RightAnswer":false,"Answer":"Postcard"},
+			{"AnswerPosition":"B","RightAnswer":true,"Answer":"Counter stand inserts"},
+			{"AnswerPosition":"C","RightAnswer":false,"Answer":"Posters"}
+		],
+		"Answer":"Counter stand inserts",
+		"AnswerPosition":"B",
+		"AnswerDetail":"",
+		"AnswerDisclaimer":""
+	},
+	{
+		"Question":"Which of these metrics is weighted 2x on the RPM Scorecard?",
+		"Answers":[
+			{"AnswerPosition":"A","RightAnswer":true,"Answer":"New member registration"},
+			{"AnswerPosition":"B","RightAnswer":false,"Answer":"Flyer distribution"},
+			{"AnswerPosition":"C","RightAnswer":false,"Answer":"Retail signage"}
+		],
+		"Answer":"New member registration",
+		"AnswerPosition":"A",
+		"AnswerDetail":"",
+		"AnswerDisclaimer":""
+	},
+	{
+		"Question":"Which visual indicator on the new training Home screen provides access to courses associated with your job title?",
+		"Answers":[
+			{"AnswerPosition":"A","RightAnswer":false,"Answer":"Challenge"},
+			{"AnswerPosition":"B","RightAnswer":true,"Answer":"Training Track"},
+			{"AnswerPosition":"C","RightAnswer":false,"Answer":"Workbooks"},
+			{"AnswerPosition":"D","RightAnswer":false,"Answer":"Department"}
+		],
+		"Answer":"Training Track",
+		"AnswerPosition":"B",
+		"AnswerDetail":"",
+		"AnswerDisclaimer":""
+	},
+	{
+		"Question":"Which Help resource can you use to learn more about the Dealer Training Website?",
+		"Answers":[
+			{"AnswerPosition":"A","RightAnswer":false,"Answer":"Dealer Training Website Tutorial"},
+			{"AnswerPosition":"B","RightAnswer":false,"Answer":"Dealer Training Navigation Guidebook"},
+			{"AnswerPosition":"C","RightAnswer":false,"Answer":"Master Technician Guidebook"},
+			{"AnswerPosition":"D","RightAnswer":true,"Answer":"Both A and B"}
+		],
+		"Answer":"Both A and B",
+		"AnswerPosition":"D",
+		"AnswerDetail":"",
+		"AnswerDisclaimer":""
+	},
+	{
+		"Question":"Where do you click on the training Home screen to manage the Dealer Roster?",
+		"Answers":[
+			{"AnswerPosition":"A","RightAnswer":false,"Answer":"Home"},
+			{"AnswerPosition":"B","RightAnswer":false,"Answer":"Your Name"},
+			{"AnswerPosition":"C","RightAnswer":true,"Answer":"Your Dealer Code"},
+			{"AnswerPosition":"D","RightAnswer":false,"Answer":"Bell"}
+		],
+		"Answer":"Your Dealer Code",
+		"AnswerPosition":"C",
+		"AnswerDetail":"",
+		"AnswerDisclaimer":""
+	},
+	{
+		"Question":"The PACCAR Parts Bin Mobile Training App is available for both the iPhone/Android platforms and through the World Wide Web.",
+		"Answers":[
+			{"AnswerPosition":"A","RightAnswer":true,"Answer":"True"},
+			{"AnswerPosition":"B","RightAnswer":false,"Answer":"False"}
+		],
+		"Answer":"True",
+		"AnswerPosition":"A",
+		"AnswerDetail":"",
+		"AnswerDisclaimer":""
+	},
+	{
+		"Question":"Training Assessments are available for an unlimited time, after a face-to-face training event.",
+		"Answers":[
+			{"AnswerPosition":"A","RightAnswer":false,"Answer":"True"},
+			{"AnswerPosition":"B","RightAnswer":true,"Answer":"False"}
+		],
+		"Answer":"False",
+		"AnswerPosition":"B",
+		"AnswerDetail":"",
+		"AnswerDisclaimer":""
+	},
+	{
+		"Question":"What is the annual count of emails that are sent to Parts and Service and TRP customers?",
+		"Answers":[
+			{"AnswerPosition":"A","RightAnswer":false,"Answer":"1,575,000"},
+			{"AnswerPosition":"B","RightAnswer":true,"Answer":"2,285,000"},
+			{"AnswerPosition":"C","RightAnswer":false,"Answer":"500,000"},
+			{"AnswerPosition":"D","RightAnswer":false,"Answer":"250,000"}
+		],
+		"Answer":"2,285,000",
+		"AnswerPosition":"B",
+		"AnswerDetail":"",
+		"AnswerDisclaimer":""
+	},
+	{
+		"Question":"How many monthly visitors are there to the Parts and Service and TRP websites?",
+		"Answers":[
+			{"AnswerPosition":"A","RightAnswer":false,"Answer":"100,000"},
+			{"AnswerPosition":"B","RightAnswer":true,"Answer":"800,000+"},
+			{"AnswerPosition":"C","RightAnswer":false,"Answer":"75,000"},
+			{"AnswerPosition":"D","RightAnswer":false,"Answer":"10,000"}
+		],
+		"Answer":"800,000+",
+		"AnswerPosition":"B",
+		"AnswerDetail":"",
+		"AnswerDisclaimer":""
+	},
+	{
+		"Question":"How many parts can be found on TRPParts.com?",
+		"Answers":[
+			{"AnswerPosition":"A","RightAnswer":false,"Answer":"75,000"},
+			{"AnswerPosition":"B","RightAnswer":false,"Answer":"45,000"},
+			{"AnswerPosition":"C","RightAnswer":false,"Answer":"10,000"},
+			{"AnswerPosition":"D","RightAnswer":true,"Answer":"109,000+"}
+		],
+		"Answer":"109,000+",
+		"AnswerPosition":"D",
+		"AnswerDetail":"",
+		"AnswerDisclaimer":""
+	},
+	{
+		"Question":"Where can customers go to sign up for the loyalty program?",
+		"Answers":[
+			{"AnswerPosition":"A","RightAnswer":false,"Answer":"Parts and Service Website"},
+			{"AnswerPosition":"B","RightAnswer":false,"Answer":"TRPParts.com"},
+			{"AnswerPosition":"C","RightAnswer":false,"Answer":"Local Dealership"},
+			{"AnswerPosition":"D","RightAnswer":true,"Answer":"All the above"}
+		],
+		"Answer":"All the above",
+		"AnswerPosition":"D",
+		"AnswerDetail":"",
+		"AnswerDisclaimer":""
+	}
+]}

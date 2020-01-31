@@ -1,0 +1,19 @@
+var TEXT_PRELOADER_CONTINUE = "START";
+var TEXT_ARE_SURE = "ARE YOU SURE?"
+var TEXT_GAMEOVER  = "GAME OVER";
+var TEXT_ISPAUSED  = "PAUSED";
+var TEXT_SCORE     = "SCORE:";
+var TEXT_SHUFFLE   = "NO MORE MATCHES AVAILABLE...";
+var TEXT_HELP   = "Match 3 or more parts in a row to gain points before time runs out.";
+var TEXT_HELP_ITEM = "TAP TO MATCH";
+var TEXT_HELP_BOMB = "Match 4 identical parts in a row to get a bomb";
+var TEXT_HELP_CLOCK = "If you are lucky, you'll gain extra time";
+var TEXT_HELP_CHANGING = "Eliminate all identical parts by tapping the rapidly changing part.";
+var TEXT_CREDITS_DEVELOPED = "DEVELOPED BY";
+
+var TEXT_SHARE_IMAGE = "200x200.png";
+var TEXT_SHARE_TITLE = "Congratulations!";
+var TEXT_SHARE_MSG1 = "You collected <strong>";
+var TEXT_SHARE_MSG2 = " points</strong>!<br><br>Share your score with your friends!";
+var TEXT_SHARE_SHARE1 = "My score is ";
+var TEXT_SHARE_SHARE2 = " points! Can you do better";
