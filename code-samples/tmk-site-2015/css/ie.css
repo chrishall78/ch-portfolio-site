@@ -1,0 +1,3 @@
+.booking-widget select { padding: 0.8em; }
+.booking-widget option, .booking-widget optgroup { color: rgba(255, 255, 255, 1); background-color: rgba(186, 182, 170, 1); }
+.booking-widget .wrapper:after { display: none; }

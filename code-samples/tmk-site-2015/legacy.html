@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Basic Page Needs -->
+	<title>The Legacy | Timeless Mauna Kea</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="Mauna Kea Beach Hotel, founded by venture capitalist and passionate conservationist Laurance S. Rockefeller in 1965, marked its 50th anniversary in 2015." />
+	<link href="images/favicon.ico" rel="icon">
+	<link href="images/favicon.ico" rel="shortcut icon">
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/grid.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+	<link rel="stylesheet" href="css/tmk-style.css?updated=20150327" type="text/css">
+	<link rel="stylesheet" href="css/timeline.css" type="text/css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700" type="text/css">
+	<!--[if lte IE 9]> <link rel="stylesheet" href="css/ie.css" type="text/css" /> <![endif]-->
+</head>
+
+<body>
+	<header class="clearfix">
+		<section class="navigation-area">
+			<nav class="sticky-nav">
+				<div class="row row1 clearfix">
+					<div class="container">
+						<div class="column full">
+							<div class="tmk-logo hide-on-mobile">
+								<a href="index.html"><img src="images/global/logo-mk-side.png" alt="Mauna Kea Beach Hotel" /></a>
+							</div>
+							<div class="tmk-logo hide-on-desktop">
+								<a href="index.html"><img src="images/global/logo-tmk-auto.png" alt="Mauna Kea Beach Hotel" /></a>
+							</div>
+							<div class="auto-logo">
+								<a href="http://www.autograph-hotels.marriott.com/"><img src="images/global/autograph-logo.png" alt="Autograph Collection Hotels" /></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row row2 clearfix">
+					<div class="container">
+						<div class="column full">
+							<ul class="menu left">
+								<li><a href="legacy.html" class="active">The Legacy</a></li>
+								<li><a href="luxury.html">The Luxury</a></li>
+								<li><a href="style.html">The Style</a></li>
+								<!-- <li><a href="celebration.html">The Celebration</a></li> -->
+								<li class="last"><a href="offers.html">The Offers</a></li>
+								<li class="cta"><a href="http://www.PrinceResortsHawaii.com/mauna-kea-beach-hotel">Visit Mauna Kea</a></li>
+							</ul>
+							<ul class="menu right">
+								<li><i class="icon-phone"></i><a href="tel:+18669774589">866.977.4589</a></li>
+								<li class="cta"><a href="http://www.PrinceResortsHawaii.com/mauna-kea-beach-hotel">Visit Mauna Kea</a></li>
+							</ul>
+							<div class="mobile-button-wrapper">
+								<a class="mobile-menu-button" href="#"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</section>
+	</header>
+
+	<div role="main">
+		<section class="hero-area subpage legacypage">
+			<div class="">
+				<div class="row clearfix">
+					<div class="column full">
+						<div class="overlay">
+							<h2>the</h2>
+							<h1>Legacy</h1>
+						</div>
+						<div class="booking-widget">
+							<p>Check availability <span>or</span> call <a href="tel:+18669774589">866.977.4589</a></p>
+							<form name="reservations:console" id="reservations-console" action="http://www.marriott.com/reservation/availabilitySearch.mi" method="post" target="_blank" class="track validate inline console new-select-promo-form">
+								<!-- The following fields are populated via javascript in js-controls.js -->
+								<input type="hidden" value="teaserbox" name="psk801">
+								<input type="hidden" value="" name="pdcheckinyyyymmdd" id="pdcheckinyyyymmdd">
+								<input type="hidden" value="" name="pdcheckoutyyyymmdd" id="pdcheckoutyyyymmdd">
+								<input type="hidden" value="" name="numberOfNights" id="numberOfNights">
+								<input type="hidden" value="" name="numberOfRooms" id="numberOfRooms">
+								<input type="hidden" value="" name="numberOfAdults" id="numberOfAdults">
+								<input type="hidden" value="" name="numberOfChildren" id="numberOfChildren"/>
+								<input type="hidden" value="" name="arrivalDate" id="arrivalDate">
+								<input type="hidden" value="" name="pdpromocode" id="pdpromocode_hidden">
+								<input type="hidden" value="post" name="cmd" id="cmd">
+								<input type="hidden" value="1" name="pdrooms" id="pdrooms">
+								<!-- marsha fields -->
+								<input type="hidden" value="" name="fromDate" id="fromDate"/>
+								<input type="hidden" value="" name="toDate" id="toDate"/>
+								<input type="hidden" value="" name="numberOfGuests" id="numberOfGuests"/>
+								<!-- End JS populated fields -->
+								<!-- Begin Reztrip fields -->
+								<input type="hidden" name="arrival_date" id="arrival_date" value="" />
+								<input type="hidden" name="departure_date" id="departure_date" value="" />
+								<input type="hidden" name="rooms" id="rooms" value="" />
+								<input type="hidden" name="children[]" id="children_reztrip" value="" />
+								<input type="hidden" name="adults[]" id="adults_reztrip" value="" />
+								<!-- End Reztrip fields -->
+
+								<div class="wrapper hotel-wrapper">
+									<select id="propertyCode" name="propertyCode" class="required selecthotel">
+										<option value="0">Select a Hotel</option>
+										<option value="KOAAK" class="maunakbh">Mauna Kea Beach Hotel</option>
+										<option value="H09284" class="hapunabph">Hapuna Beach Prince Hotel</option>
+										<option value="H09285" class="hphwaikiki">Hawaii Prince Hotel Waikiki</option>
+									</select>
+								</div>
+								<div class="js-form-fields">
+									<div class="pairing">
+										<label for="arrival">from</label>
+										<input type="text" name="arrive" id="arrival" maxlength="10" class="date-picker netbooker date-begin textfield" placeholder="MM/DD/YYYY" value="">
+									</div>
+									<div class="pairing">
+										<label for="departure">to</label>
+										<input type="text" name="depart" id="departure" maxlength="10" class="date-picker netbooker date-end textfield" placeholder="MM/DD/YYYY" value="">
+									</div>
+									<div class="wrapper">
+										<select id="adults" name="adults">
+											<option value="1">1 adult</option>
+											<option value="2">2 adults</option>
+											<option value="3">3 adults</option>
+										</select>
+									</div>
+									<div class="wrapper">
+										<select id="children" name="children">
+											<option value="0">no children</option>
+											<option value="1">1 child</option>
+											<option value="2">2 children</option>
+										</select>
+									</div>
+									<div class="disclaimer mauna-mssg" style="display:none;">*Number of persons per room: maximum of 2 adults and 1 child (age 17 and under) or 3 adults</div>
+									<div class="disclaimer hapuna-mssg" style="display:none;">*Number of persons per room: maximum of 2 adults and 2 children (age 17 and under) or 3 adults</div>
+									<div class="disclaimer waikiki-mssg" style="display:none;">*Number of persons per room: maximum of 2 adults and 2 children (age 17 and under) or 3 adults</div>
+								</div>
+								<button type="submit" class="submit">Book Now</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="content-subpage">
+			<div class="container">
+
+				<div class="row clearfix">
+					<div class="column full">
+						<p class="u-textCenter"><img src="images/global/icon-plumeria.png" alt="Mauna Kea Flower Image" width="30" /></p>
+						<h2>In 1960, a worldly man took action on his belief that there is much the ancient East can teach the West.</h2>
+						<p>Mauna Kea Beach Hotel, founded by venture capitalist and passionate conservationist Laurance S. Rockefeller in 1965, marked its 50th anniversary in 2015. The first resort built on the raw and stunning Kohala Coast, the Mauna Kea remains a landmark of luxury on Hawai'i Island, offering 252 newly refreshed guest rooms and suites.</p>
+					</div>
+				</div>
+
+				<div class="row clearfix">
+					<div class="column full">
+
+						<section id="cd-timeline" class="cd-container">
+							<div class="cd-timeline-block">
+								<div class="cd-timeline-img">
+									<img src="images/global/icon-plumeria.png" alt="Plumeria">
+								</div>
+								<div class="cd-timeline-content">
+									<span class="cd-date">June 1960</span>
+									<img src="images/legacy/timeline/timeline-01.jpg" alt="Timeline Image" class="responsive" />
+									<p>Laurance S. Rockefeller visits Hawai'i at the invitation of Governor William F. Quinn looking for sites on which to develop resort hotels; falls in love with Kauna'oa Bay.</p>
+								</div>
+							</div>
+
+							<div class="cd-timeline-block">
+								<div class="cd-timeline-img">
+									<img src="images/global/icon-plumeria.png" alt="Plumeria">
+								</div>
+								<div class="cd-timeline-content">
+									<span class="cd-date">1961</span>
+									<img src="images/legacy/timeline/timeline-02.jpg" alt="Timeline Image" class="responsive" />
+									<p>Laurance S. Rockefeller takes 99-year lease on Parker Ranch lands that include site for Mauna Kea Beach Hotel.</p>
+								</div>
+							</div>
+
+							<div class="cd-timeline-block">
+								<div class="cd-timeline-img">
+									<img src="images/global/icon-plumeria.png" alt="Plumeria">
+								</div>
+								<div class="cd-timeline-content">
+									<span class="cd-date">1962</span>
+									<img src="images/legacy/timeline/timeline-03.jpg" alt="Timeline Image" class="responsive" />
+									<p>Under the direction of designer Robert Trent Jones Sr., construction begins on the golf course.</p>
+								</div>
+							</div>
+
+							<div class="cd-timeline-block">
+								<div class="cd-timeline-img">
+									<img src="images/global/icon-plumeria.png" alt="Plumeria">
+								</div>
+								<div class="cd-timeline-content">
+									<span class="cd-date">1963</span>
+									<img src="images/legacy/timeline/timeline-04.jpg" alt="Timeline Image" class="responsive" />
+									<p>Construction begins on hotel with industry-leading architectural firm Skidmore, Owings &amp; Merrill.</p>
+								</div>
+							</div>
+
+							<div class="cd-timeline-block">
+								<div class="cd-timeline-img">
+									<img src="images/global/icon-plumeria.png" alt="Plumeria">
+								</div>
+								<div class="cd-timeline-content">
+									<span class="cd-date">December 8, 1964</span>
+									<img src="images/legacy/timeline/timeline-05.jpg" alt="Timeline Image" class="responsive" />
+									<p>Grand Opening of the golf course with the &quot;Big 3,&quot; Gary Player, Arnold Palmer, and Jack Nicklaus.</p>
+								</div>
+							</div>
+
+							<div class="cd-timeline-block">
+								<div class="cd-timeline-img">
+									<img src="images/global/icon-plumeria.png" alt="Plumeria">
+								</div>
+								<div class="cd-timeline-content">
+									<span class="cd-date">July 1965</span>
+									<img src="images/legacy/timeline/timeline-06a.jpg" alt="Timeline Image" class="responsive" />
+									<p>Grand Opening of Mauna Kea Beach Hotel.</p>
+									<img src="images/legacy/timeline/timeline-06b.jpg" alt="Timeline Image" class="responsive u-floatLeft no-border" />
+								</div>
+							</div>
+
+							<div class="cd-timeline-block">
+								<div class="cd-timeline-img">
+									<img src="images/global/icon-plumeria.png" alt="Plumeria">
+								</div>
+								<div class="cd-timeline-content">
+									<span class="cd-date">1967</span>
+									<img src="images/legacy/timeline/timeline-07a.jpg" alt="Timeline Image" class="responsive no-border" />
+									<p><em>Esquire</em> lists Mauna Kea Beach Hotel as one of the three greatest hotels in the world; <em>Fortune</em> names it one of &ldquo;10 best buildings of 1966.&rdquo;</p>
+									<img src="images/legacy/timeline/timeline-07b.jpg" alt="Timeline Image" class="responsive" />
+									<p>The &ldquo;Great Buddha&rdquo; arrives and is installed above the grand staircase.</p>
+								</div>
+							</div>
+
+							<div class="cd-timeline-block">
+								<div class="cd-timeline-img">
+									<img src="images/global/icon-plumeria.png" alt="Plumeria">
+								</div>
+								<div class="cd-timeline-content">
+									<span class="cd-date">1968</span>
+									<img src="images/legacy/timeline/timeline-08-bw.jpg" alt="Timeline Image" class="responsive" />
+									<p>The Beachfront Wing opens, designed by Honolulu architects Wimberly, Whisen and, Allison, Tong and Goo with interiors by Phyllis Brownlee; renowned painter, John Young creates original paintings for the Beachfront guestrooms; a second restaurant, The Batik, opens.</p>
+								</div>
+							</div>
+
+							<div class="cd-timeline-block">
+								<div class="cd-timeline-img">
+									<img src="images/global/icon-plumeria.png" alt="Plumeria">
+								</div>
+								<div class="cd-timeline-content">
+									<span class="cd-date">July 1970</span>
+									<img src="images/legacy/timeline/timeline-09-bw.jpg" alt="Timeline Image" class="responsive" />
+									<p>Opening of Kona International Airport allows greater access to the leeward side of Hawai'i Island.</p>
+								</div>
+							</div>
+
+							<div class="cd-timeline-block">
+								<div class="cd-timeline-img">
+									<img src="images/global/icon-plumeria.png" alt="Plumeria">
+								</div>
+								<div class="cd-timeline-content">
+									<span class="cd-date">1973</span>
+									<img src="images/legacy/timeline/timeline-10.jpg" alt="Timeline Image" class="responsive" />
+									<p>8th Floor added.</p>
+									<img src="images/legacy/timeline/timeline-11.jpg" alt="Timeline Image" class="responsive" />
+									<p>Completion of Queen Ka'ahamanu Highway from the Kona International Airport to Mauna Kea Beach Hotel and the Kawaihae area.</p>
+								</div>
+							</div>
+
+							<div class="cd-timeline-block">
+								<div class="cd-timeline-img">
+									<img src="images/global/icon-plumeria.png" alt="Plumeria">
+								</div>
+								<div class="cd-timeline-content push-left">
+									<span class="cd-date">1989</span>
+									<img src="images/legacy/timeline/timeline-12-logo.png" alt="Timeline Image" class="responsive no-border" />
+									<p>Mauna Kea Resort acquired by Seibu Railway and begins operation under the flag of Prince Hotels &amp; Resorts.</p>
+								</div>
+							</div>
+
+							<div class="cd-timeline-block">
+								<div class="cd-timeline-img">
+									<img src="images/global/icon-plumeria.png" alt="Plumeria">
+								</div>
+								<div class="cd-timeline-content">
+									<span class="cd-date">1994</span>
+									<img src="images/legacy/timeline/timeline-13.jpg" alt="Timeline Image" class="responsive" />
+									<p>Mauna Kea Beach Hotel closes for renovations and Hapuna Beach Prince Hotel opens.</p>
+								</div>
+							</div>
+
+							<div class="cd-timeline-block">
+								<div class="cd-timeline-img">
+									<img src="images/global/icon-plumeria.png" alt="Plumeria">
+								</div>
+								<div class="cd-timeline-content">
+									<span class="cd-date">December 1995</span>
+									<img src="images/legacy/timeline/timeline-15.jpg" alt="Timeline Image" class="responsive" />
+									<p>Mauna Kea Beach Hotel reopens (with televisions in the guestrooms).</p>
+									<img src="images/legacy/timeline/timeline-14.jpg" alt="Timeline Image" class="responsive" />
+									<p>Mauna Kea Beach Hotel joins sister property Hapuna Beach Prince Hotel to form the Mauna Kea Resort.</p>
+								</div>
+							</div>
+
+							<div class="cd-timeline-block">
+								<div class="cd-timeline-img">
+									<img src="images/global/icon-plumeria.png" alt="Plumeria">
+								</div>
+								<div class="cd-timeline-content">
+									<span class="cd-date">March 2001</span>
+									<img src="images/legacy/timeline/timeline-16.jpg" alt="Timeline Image" class="responsive" />
+									<p>Kauna'oa Bay announced as &ldquo;America's No. 1 Beach&rdquo; and &ldquo;No. 5 Beach in the World&rdquo; by The Travel Channel.</p>
+								</div>
+							</div>
+
+							<div class="cd-timeline-block">
+								<div class="cd-timeline-img">
+									<img src="images/global/icon-plumeria.png" alt="Plumeria">
+								</div>
+								<div class="cd-timeline-content">
+									<span class="cd-date">October 15, 2006</span>
+									<img src="images/legacy/timeline/timeline-17.jpg" alt="Timeline Image" class="responsive" />
+									<p>A major earthquake strikes off Hawai'i's Big Island causing Mauna Kea Beach Hotel to close for just over two years while repairs are being completed.</p>
+								</div>
+							</div>
+
+							<div class="cd-timeline-block">
+								<div class="cd-timeline-img">
+									<img src="images/global/icon-plumeria.png" alt="Plumeria">
+								</div>
+								<div class="cd-timeline-content">
+									<span class="cd-date">2008</span>
+									<img src="images/legacy/timeline/timeline-18.jpg" alt="Timeline Image" class="responsive" />
+									<p>Major renovation of Mauna Kea Golf Course by Rees Jones, youngest son of original course designer Robert Trent Jones.</p>
+								</div>
+							</div>
+
+							<div class="cd-timeline-block">
+								<div class="cd-timeline-img">
+									<img src="images/global/icon-plumeria.png" alt="Plumeria">
+								</div>
+								<div class="cd-timeline-content">
+									<span class="cd-date">December 2008</span>
+									<img src="images/legacy/timeline/timeline-19.jpg" alt="Timeline Image" class="responsive" />
+									<p>Mauna Kea Beach Hotel reopens after $150 million renovation.</p>
+								</div>
+							</div>
+
+							<div class="cd-timeline-block">
+								<div class="cd-timeline-img">
+									<img src="images/global/icon-plumeria.png" alt="Plumeria">
+								</div>
+								<div class="cd-timeline-content">
+									<span class="cd-date">November 2013</span>
+									<img src="images/legacy/timeline/timeline-20.jpg" alt="Timeline Image" class="responsive" />
+									<p>Multi-million dollar Beachfront Wing renovation completed with five-fixture bathrooms that provide views from soaking tub to the ocean.</p>
+								</div>
+							</div>
+
+							<div class="cd-timeline-block">
+								<div class="cd-timeline-img">
+									<img src="images/global/icon-plumeria.png" alt="Plumeria">
+								</div>
+								<div class="cd-timeline-content">
+									<span class="cd-date">December 2014</span>
+									<img src="images/legacy/timeline/timeline-21.jpg" alt="Timeline Image" class="responsive" />
+									<p>Mauna Kea Golf Course celebrates 50-year anniversary.</p>
+								</div>
+							</div>
+
+							<div class="cd-timeline-block">
+								<div class="cd-timeline-img">
+									<img src="images/global/icon-plumeria.png" alt="Plumeria">
+								</div>
+								<div class="cd-timeline-content">
+									<span class="cd-date">July 2015</span>
+									<img src="images/legacy/timeline/timeline-22-logo.jpg" alt="Timeline Image" class="responsive no-border" />
+									<p>Mauna Kea Beach Hotel celebrates 50-year anniversary.</p>
+								</div>
+							</div>
+						</section>
+
+					</div>
+				</div>
+
+				<div class="row clearfix">
+					<div class="column full">
+						<p class="u-textCenter"><img src="images/global/icon-plumeria.png" alt="Mauna Kea Flower Image" /></p>
+						<h2>What was, is timeless...</h2>
+						<h3>Laurance S. Rockefeller envisioned a marriage of cultures in the most idyllic place on earth, Hawaii.</a>
+					</div>
+				</div>
+
+				<div class="row clearfix">
+					<div class="column full">
+						<p class="u-textCenter"><img src="images/legacy/body-rockefeller1.jpg" alt="Mauna Kea Beach Hotel Landscape Photo" class="responsive" /></p>
+						<h1 class="big-quote">&ldquo;The design should follow the natural contours of the land, incorporate lava rock and in every possible way make the hotel <span>invisible</span>.&rdquo;</h1>
+						<p>— Laurance S. Rockefeller</p>
+					</div>
+				</div>
+
+				<div class="row clearfix">
+					<div class="column full u-textLeft">
+						<p><img src="images/legacy/body-rockefeller2.jpg" class="left-image"></p>
+						<p>Rockefeller sought out the crescent beach at Kauna'oa Bay along the Kohala Coast of Hawaii Island. He proceeded to carve out an oasis from a hillside of raw a'a, lava rock. Architects Skidmore, Owings &amp; Merrill drafted a design of clean, simple Mid Century modern. Their work follows the topography with a cascading pair of stepped-back, open-air galleries. Mauna Kea invites the gardens in and her blue-tiled lobby brings the ocean to the threshold of the porte-cochere.</p>
+						<p>As the resort neared completion, Rockefeller took a motor launch off shore. He looked back to the bay, the beach and his hotel-to-be with snow-capped Mauna Kea volcano, the backdrop. The building was too bright. He ordered a repaint to harmonize with the surround.  No man can outdo nature; mustn't even try.</p>
+						<p>Another star of Rockefeller's team, Robert Trent Jones, Sr., took to the task of seamlessly blending in 18 fairways and greens of Mauna Kea Golf Course. His greatest leap of brush strokes came at the 3rd hole with an over-water carry from tee to green. The ensuing debate over the most beautiful hole in the world touched off on March 6, 1964 with a nationally televised match of Big Three Golf – Arnold Palmer, Gary Player and Jack Nicklaus.  The debate continues to this day. Beautiful as the day she opened. Mauna Kea's mid-century modern architecture remains timeless a half century later.</p>
+					</div>
+				</div>
+
+			</div>
+		</section>
+	</div>
+
+	<footer>
+		<section class="footer-hero legacypage">
+			<div class="container">
+				<div class="row clearfix">
+					<div class="column full">
+						<div class="quote dark right middle">
+							<h3>Discover Mauna Kea's legacy and</h3>
+							<h2>delight your senses.</h2>
+							<p><a href="offers.html" class="button">See All Offers</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="newsletter">
+				<div class="container">
+					<form id="clickdimensionsForm" name="clickdimensionsForm" method="post" accept-charset="utf-8" enctype="multipart/form-data" action="https://analytics.clickdimensions.com/forms/">
+						<p><label>Sign up for our <span>Newsletter</span></label> 
+						<input type="hidden" name="cd_accountkey" id="cd_accountkey" value="aHlRHeC1F3kON96FMSKQB3">
+						<input type="hidden" name="cd_domain" id="cd_domain" value="princeresortshawaii.com">
+						<input type="hidden" name="cd_visitorkey" id="cd_visitorkey" value="">
+						<input type="hidden" name="cd_visitoremail" id="cd_visitoremail" value="">
+						<input type="hidden" name="cd_timezone" id="cd_timezone" value="">
+						<input type="hidden" name="cd_domainalias" id="cd_domainalias" value="">
+						<input type="hidden" name="cd_postsettings" id="cd_postsettings" value="Jmx0O3NldHRpbmdzIG5hbWU9JnF1b3Q7VGltZWxlc3MgTWF1bmEgS2VhIExhbmRpbmcgUGFnZSZxdW90OyZndDsNCiAgJmx0O2RvbWFpbiBpZD0mcXVvdDsyMTljMGQ0ZWEwZmZlMjExYTIxZTAwMGMyOTFlZGZhMyZxdW90OyAvJmd0Ow0KICAmbHQ7d2ViQ29udGVudCBpZD0mcXVvdDs4MkZGQjAxQjZGMDBFMzExQTIxRTAwMEMyOTFFREZBMyZxdW90OyB0eXBlPSZxdW90O2Zvcm0mcXVvdDsgLyZndDsNCiAgJmx0O2NhbXBhaWduIGlkPSZxdW90OyZxdW90OyAvJmd0Ow0KICAmbHQ7ZW1haWwgbm90aWZpY2F0aW9uPSZxdW90OyZxdW90OyAvJmd0Ow0KICAmbHQ7cmVzcG9uc2UmZ3Q7TWFoYWxvJmFtcDthbXA7bmJzcDtmb3Igam9pbmluZyBvdXIgRW1haWwgQ2x1YiEmYW1wO2FtcDtuYnNwOyZhbXA7YW1wO25ic3A7IEtlZXAgYW4gZXllIG9uIHlvdXIgZW1haWwgaW5ib3ggZm9yIG5ld3MgYW5kIHNwZWNpYWxzISZsdDsvcmVzcG9uc2UmZ3Q7DQogICZsdDt2aXNpdG9yRW50aXR5Jmd0O2NvbnRhY3QmbHQ7L3Zpc2l0b3JFbnRpdHkmZ3Q7DQogICZsdDtmaWVsZHMmZ3Q7DQogICAgJmx0O2ZpZWxkIGlkPSZxdW90O2FiZGY1MDM5NmYwMGUzMTFhMjFlMDAwYzI5MWVkZmEzJnF1b3Q7IHR5cGU9JnF1b3Q7VGV4dCZxdW90OyBvdmVycmlkZT0mcXVvdDt0cnVlJnF1b3Q7IG1heExlbmd0aD0mcXVvdDs1MCZxdW90OyBtYXhXaWR0aD0mcXVvdDsxODAmcXVvdDsgbGVuZ3RoPSZxdW90OzUwJnF1b3Q7IGxhYmVsPSZxdW90O0ZpcnN0IE5hbWUmcXVvdDsgZmllbGRJZD0mcXVvdDtmX2FiZGY1MDM5NmYwMGUzMTFhMjFlMDAwYzI5MWVkZmEzJnF1b3Q7IGZpZWxkVHlwZT0mcXVvdDtGaWVsZCZxdW90OyBmb250TmFtZT0mcXVvdDtWZXJkYW5hJnF1b3Q7IGZvbnRTaXplPSZxdW90OzEzJnF1b3Q7IGZvbnRXZWlnaHQ9JnF1b3Q7bm9ybWFsJnF1b3Q7IGZvbnRDb2xvcj0mcXVvdDsjMDAwMDAwJnF1b3Q7IGxlYWRGaWVsZD0mcXVvdDtmaXJzdG5hbWUmcXVvdDsgY29udGFjdEZpZWxkPSZxdW90O2ZpcnN0bmFtZSZxdW90OyBkZWZhdWx0VmFsdWU9JnF1b3Q7JnF1b3Q7IHNpemU9JnF1b3Q7MyZxdW90OyBjb250cm9sV2lkdGg9JnF1b3Q7MyZxdW90OyBwYXR0ZXJuSUQ9JnF1b3Q7MCZxdW90OyBjdXN0b21SZWdleD0mcXVvdDsmcXVvdDsgZXJyb3JNc2c9JnF1b3Q7UGxlYXNlIGVudGVyIGEgdmFsaWQgdmFsdWUuJnF1b3Q7IHJlcXVyZWRFcnJvck1zZz0mcXVvdDtUaGlzIGZpZWxkIGlzIHJlcXVpcmVkLiBQbGVhc2UgZW50ZXIgYSB2YWx1ZS4mcXVvdDsgLyZndDsNCiAgICAmbHQ7ZmllbGQgaWQ9JnF1b3Q7Y2YxOTM1MDA3MDAwZTMxMWEyMWUwMDBjMjkxZWRmYTMmcXVvdDsgdHlwZT0mcXVvdDtUZXh0JnF1b3Q7IG92ZXJyaWRlPSZxdW90O3RydWUmcXVvdDsgbWF4TGVuZ3RoPSZxdW90OzUwJnF1b3Q7IG1heFdpZHRoPSZxdW90OzE4MCZxdW90OyBsZW5ndGg9JnF1b3Q7NTAmcXVvdDsgbGFiZWw9JnF1b3Q7TGFzdCBOYW1lJnF1b3Q7IGZpZWxkSWQ9JnF1b3Q7Zl9jZjE5MzUwMDcwMDBlMzExYTIxZTAwMGMyOTFlZGZhMyZxdW90OyBmaWVsZFR5cGU9JnF1b3Q7RmllbGQmcXVvdDsgZm9udE5hbWU9JnF1b3Q7VmVyZGFuYSZxdW90OyBmb250U2l6ZT0mcXVvdDsxMyZxdW90OyBmb250V2VpZ2h0PSZxdW90O25vcm1hbCZxdW90OyBmb250Q29sb3I9JnF1b3Q7IzAwMDAwMCZxdW90OyBsZWFkRmllbGQ9JnF1b3Q7bGFzdG5hbWUmcXVvdDsgY29udGFjdEZpZWxkPSZxdW90O2xhc3RuYW1lJnF1b3Q7IGRlZmF1bHRWYWx1ZT0mcXVvdDsmcXVvdDsgc2l6ZT0mcXVvdDszJnF1b3Q7IGNvbnRyb2xXaWR0aD0mcXVvdDszJnF1b3Q7IHBhdHRlcm5JRD0mcXVvdDswJnF1b3Q7IGN1c3RvbVJlZ2V4PSZxdW90OyZxdW90OyBlcnJvck1zZz0mcXVvdDtQbGVhc2UgZW50ZXIgYSB2YWxpZCB2YWx1ZS4mcXVvdDsgcmVxdXJlZEVycm9yTXNnPSZxdW90O1RoaXMgZmllbGQgaXMgcmVxdWlyZWQuIFBsZWFzZSBlbnRlciBhIHZhbHVlLiZxdW90OyAvJmd0Ow0KICAgICZsdDtmaWVsZCBpZD0mcXVvdDsyMWMxNWQxNDcwMDBlMzExYTIxZTAwMGMyOTFlZGZhMyZxdW90OyB0eXBlPSZxdW90O0VtYWlsJnF1b3Q7IHJlcXVpcmVkPSZxdW90O3RydWUmcXVvdDsgbWF4TGVuZ3RoPSZxdW90OzEwMCZxdW90OyBtYXhXaWR0aD0mcXVvdDsxODAmcXVvdDsgbGVuZ3RoPSZxdW90OzEwMCZxdW90OyBsYWJlbD0mcXVvdDtFbWFpbCBBZGRyZXNzJnF1b3Q7IGZpZWxkSWQ9JnF1b3Q7Zl8yMWMxNWQxNDcwMDBlMzExYTIxZTAwMGMyOTFlZGZhMyZxdW90OyBmaWVsZFR5cGU9JnF1b3Q7RmllbGQmcXVvdDsgZm9udE5hbWU9JnF1b3Q7VmVyZGFuYSZxdW90OyBmb250U2l6ZT0mcXVvdDsxMyZxdW90OyBmb250V2VpZ2h0PSZxdW90O25vcm1hbCZxdW90OyBmb250Q29sb3I9JnF1b3Q7IzAwMDAwMCZxdW90OyBsZWFkRmllbGQ9JnF1b3Q7ZW1haWxhZGRyZXNzMSZxdW90OyBjb250YWN0RmllbGQ9JnF1b3Q7ZW1haWxhZGRyZXNzMSZxdW90OyBkZWZhdWx0VmFsdWU9JnF1b3Q7JnF1b3Q7IHNpemU9JnF1b3Q7MyZxdW90OyBjb250cm9sV2lkdGg9JnF1b3Q7MyZxdW90OyBwYXR0ZXJuSUQ9JnF1b3Q7MSZxdW90OyBlcnJvck1zZz0mcXVvdDtQbGVhc2UgZW50ZXIgYSB2YWxpZCB2YWx1ZS4mcXVvdDsgcmVxdXJlZEVycm9yTXNnPSZxdW90O1RoaXMgZmllbGQgaXMgcmVxdWlyZWQuIFBsZWFzZSBlbnRlciBhIHZhbHVlLiZxdW90OyBmaWx0ZXJGcmVlRW1haWw9JnF1b3Q7RmFsc2UmcXVvdDsgLyZndDsNCiAgJmx0Oy9maWVsZHMmZ3Q7DQombHQ7L3NldHRpbmdzJmd0Ow=="><input type="text" id="cd_ht_text" name="cd_ht_text" value="" style="display:none;">
+						<input leadfield="firstname" contactfield="firstname" class="maxSize3" type="hidden" id="f_abdf50396f00e311a21e000c291edfa3" name="f_abdf50396f00e311a21e000c291edfa3" maxlength="50" value="">
+						<input leadfield="lastname" contactfield="lastname" class="maxSize3" type="hidden" id="f_cf1935007000e311a21e000c291edfa3" name="f_cf1935007000e311a21e000c291edfa3" maxlength="50" value="">
+						<input leadfield="emailaddress1" contactfield="emailaddress1" class="signup maxSize3" type="text" id="f_21c15d147000e311a21e000c291edfa3" name="f_21c15d147000e311a21e000c291edfa3" maxlength="100" value=""><button type="submit">Send</button></p>
+					</form>
+				</div>
+			</div>
+		</section>
+		<section class="footer">
+			<div class="container">
+				<div class="row clearfix">
+					<div class="column three-fourths">
+						<a href="index.html"><img src="images/global/logo-mk-footer.png" alt="Mauna Kea Beach Hotel Hawaii Island"></a><br>
+						<p>Mauna Kea Beach Hotel 62-100 Mauna Kea Beach Drive, Kohala Coast, Hawaii 96743</p>
+						<p>Room reservations: <a href="tel:+18669774589">866.977.4589</a>&nbsp; | &nbsp;Hotel direct: <a href="tel:+18088827222">808.882.7222</a>&nbsp; | &nbsp;Hotel fax: <a href="tel:+18088825700">808.882.5700</a>&nbsp; | &nbsp;GDS CODE: AK</p>
+					</div>
+					<div class="column fourth clearfix">
+						<ul class="social u-floatRight u-textRight">
+							<li><a class="icon-facebook" href="http://www.facebook.com/MaunaKeaBeachHotel" title="Follow Mauna Kea Beach Hotel on Facebook" alt="Facebook Icon"></a></li>
+							<li><a class="icon-twitter" href="http://twitter.com/maunakeahotel" title="Follow Mauna Kea Beach Hotel on Twitter" alt="Twitter Icon"></a></li>
+							<li><a class="icon-youtube" href="https://www.youtube.com/user/PrinceResortsHawaii" title="Follow Mauna Kea Beach Hotel on YouTube" alt="YouTube Icon"></a></li>
+							<li><a class="icon-instagram" href="http://instagram.com/MaunaKeaHotel" title="Follow Mauna Kea Beach Hotel on Instagram" alt="Instagram Icon"></a></li>
+							<li><a class="icon-pinterest" href="http://pinterest.com/princeresortshi/" title="Follow Mauna Kea Beach Hotel on Pinterest" alt="Pinterest Icon"></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row clearfix">
+					<div class="column half clearfix">
+						<ul class="menu">
+							<li class="copyright">&copy; 2015 Prince Resorts Hawaii. All Rights Reserved.</li>
+							<li><a href="http://www.princeresortshawaii.com/mauna-kea-beach-hotel/privacy-policy.php">Privacy Policy</a></li>
+						</ul>
+					</div>
+					<div class="column half logos">
+						<a href="http://www.princeresortshawaii.com/"><img src="images/global/logo-prince-footer2.png" alt="Prince Resorts Hawaii" /></a>
+						<a href="http://www.princehotels.com/"><img src="images/global/logo-prince-footer1.png" alt="Prince Hotels &amp; Resorts" /></a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</footer>
+
+	<script type="text/javascript" src="scripts/modernizr.js"></script>
+	<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/main.js"></script>
+	<script type="text/javascript" src="scripts/js-controls.js"></script>
+	<script type="text/javascript" src="scripts/timeline-animation.js"></script>
+
+	<script src="https://az124611.vo.msecnd.net/web/v6/XslForm.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	pageType = 'Form';
+	handlersLocation = 'http://webanalytics.cloudapp.net';
+	directory = 'https://az124611.vo.msecnd.net/web/v6/';
+	</script>
+	<script type="text/javascript" src="http://analytics.clickdimensions.com/ts.js"></script>
+	<script type="text/javascript" src="http://analytics.clickdimensions.com/forms.js"></script>
+	<script type="text/javascript">
+		cdDomainKey = 'ffbe874e6300e311a21e000c291edfa3';
+		cdPageKey = '82ffb01b6f00e311a21e000c291edfa3';
+	</script>
+	<script type="text/javascript">
+		var cdAnalytics = new clickdimensions.Analytics('analytics.clickdimensions.com');
+		cdAnalytics.setDomain('clickdimensions.com');
+		cdAnalytics.setAccountKey('aHlRHeC1F3kON96FMSKQB3');
+		cdAnalytics.setPageType('FORM');
+		cdAnalytics.trackPage();
+	</script>
+	<script type="text/javascript">  var cdForms = new clickdimensions.Forms();</script>
+	<!-- ClickTale Bottom part -->
+	<script type='text/javascript'>
+	// The ClickTale Balkan Tracking Code may be programmatically customized using hooks:
+	// 
+	//   function ClickTalePreRecordingHook() { /* place your customized code here */  }
+	//
+	// For details about ClickTale hooks, please consult the wiki page http://wiki.clicktale.com/Article/Customizing_code_version_2
+
+	document.write(unescape("%3Cscript%20src='"+
+	(document.location.protocol=='https:'?
+	"https://clicktalecdn.sslcs.cdngc.net/www07/ptc/439535d7-f247-4a21-8dd6-8a3d3d9c54ca.js":
+	"http://cdn.clicktale.net/www07/ptc/439535d7-f247-4a21-8dd6-8a3d3d9c54ca.js")+"'%20type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<!-- ClickTale end of Bottom part -->
+</body>
+</html>
