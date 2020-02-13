@@ -55,7 +55,7 @@ var workData = {
 			"liveSiteText": "pualeilanishops.com",
 			"thumbImageUrl": "./images/work/Pualeilani-Thumb.jpg",
 			"topImageUrl": "./images/work/Pualeilani-Top.jpg",
-			"tags": ["Front-end dev", "WCAG 2.0 AA compliance"],
+			"tags": ["Front-end dev", "Vue", "WCAG 2.0 AA compliance"],
 			"published": 1
 		},
 		{
@@ -84,12 +84,12 @@ var workData = {
 			"name": "HTA Partner Opportunities",
 			"description": "I worked with AMG to build a web application for HTA, so they can manage opportunities to promote Hawaii as a travel/tourism destination. This public portion of the app is to collect info from people interested in the posted opportunities.",
 			"date": "Feb 2019",
-			"liveSiteUrl": "https://www.hawaiitourismauthority.org//what-we-do/partner-opportunities/",
+			"liveSiteUrl": "https://www.hawaiitourismauthority.org/what-we-do/partner-opportunities/",
 			"liveSiteText": "hawaiitourismauthority.org",
 			"thumbImageUrl": "./images/work/HTA-Partner-Opportunities-Thumb.jpg",
 			"topImageUrl": "./images/work/HTA-Partner-Opportunities-Top.jpg",
 			"tags": ["Front-end dev", "WCAG 2.0 AA compliance"],
-			"published": 0
+			"published": 1
 		},
 		{
 			"name": "Kobayashi Group",
@@ -110,7 +110,7 @@ var workData = {
 			"liveSiteText": "halekulani.com",
 			"thumbImageUrl": "./images/work/Halekulani-Thumb.jpg",
 			"topImageUrl": "./images/work/Halekulani-Top.jpg",
-			"tags": ["Front-end dev", "Drupal integration", "WCAG 2.0 AA compliance"],
+			"tags": ["Front-end dev", "Drupal integration", "Shopify theme", "WCAG 2.0 AA compliance"],
 			"published": 1
 		},
 		{
@@ -170,14 +170,14 @@ var workData = {
 		},
 		{
 			"name": "FestPro iOS & Android Apps",
-			"description": "Starting in 2012, I developed a native iOS app for the film festival, and later a native Android version. These apps synced film and schedule data from the web version through an API.",
+			"description": "Starting in 2012, I developed a native iOS app for the film festival, and later a native Android version. These apps synced film and schedule data from the web version through an API. Click thumbnail for more app screens.",
 			"date": "2012 - 2016",
 			"liveSiteUrl": "#",
 			"liveSiteText": "No Longer Available",
 			"thumbImageUrl": "./images/work/FestPro-App-Thumb.jpg",
 			"topImageUrl": "./images/work/FestPro-App-Top.jpg",
 			"tags": ["Design", "iOS App", "Android App", "Objective-C", "Java"],
-			"published": 0
+			"published": 1
 		},
 		{
 			"name": "FestPro Web Application",
