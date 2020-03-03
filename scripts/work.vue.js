@@ -29,12 +29,12 @@ var workData = {
 			"name": "Kalaeloa Partners",
 			"description": "I worked with AMG to build a website for Kalaeloa Partners, an energy company located on Oahu, Hawaii. In addition to the front end build, I integrated the site into Wordpress usng custom fields and custom post types.",
 			"date": "Nov 2019",
-			"liveSiteUrl": "#",
-			"liveSiteText": "Not Launched Yet",
+			"liveSiteUrl": "https://www.kalaeloapartners.com/",
+			"liveSiteText": "kalaeloapartners.com",
 			"thumbImageUrl": "./images/work/Kalaeloa-Thumb.jpg",
 			"topImageUrl": "./images/work/Kalaeloa-Top.jpg",
 			"tags": ["Front-end dev", "Wordpress integration", "WCAG 2.0 AA compliance"],
-			"published": 0
+			"published": 1
 		},
 		{
 			"name": "Pomaika'i Ballrooms",
